@@ -23,10 +23,24 @@ step-studio/
 │   ├── studio.js        # 主题、滚动显现、计数、导航与磁吸交互
 │   ├── dotmatrix.js     # 点阵字标渲染器（studio.js 的依赖）
 │   └── svg/mark.svg     # favicon
+├── preview/            # Studio 上架素材，不是网站运行依赖
+│   ├── cover.png       # 默认封面与视频加载失败回退
+│   └── video.mp4       # hover、选中后输入框和详情预览的录制视频
 └── README.md
 ```
 
 插画直接内嵌于 HTML，不依赖外部图片。发布时将 `index.html` 和整个 `assets/` 放在同一目录即可，无需 iframe 或后端服务。
+
+## Studio 模板预览素材
+
+本模板遵循[仓库统一的预览素材约束](../../README.md#gallery-preview-assets)，同时保存两个独立文件：
+
+- [preview/cover.png](./preview/cover.png)：PNG 封面，1280 × 645，取自本次用户提供录像的第 3 秒帧，用于默认展示、加载期间及视频播放失败时回退。
+- [preview/video.mp4](./preview/video.mp4)：本次用户提供的 Step Studio 实录，转为 H.264 MP4，1280 × 646、30 fps、约 23.33 秒、4.84 MiB、无音轨，已启用 faststart。画幅与封面仅有转码偶数尺寸取整差异，不拉伸内容。
+
+Studio 模板卡片 hover/键盘聚焦、选中后的输入框预览及详情弹窗使用同一视频，静音循环并内联播放。这里的素材是 Studio 模板展示用录制内容，不需要加入网站页面，也不是网站自身的交互功能。
+
+后续更新本模板展示内容时，必须同步更新封面和视频，保留 `preview/cover.png` 与 `preview/video.mp4` 的固定路径；这两个文件与模板代码一起版本管理。当前 Studio 使用复制到 public 目录的静态素材，仓库文件不会自动同步或自动上架，接入时需按根 README 清单更新素材与模板版本。
 
 ## 功能与使用边界
 
