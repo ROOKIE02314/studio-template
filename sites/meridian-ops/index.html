@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meridian · 全球运营指挥中心</title>
+<meta name="description" content="Meridian 集团全球运营指挥中心：KPI 总览、区域下钻、品类结构、营收趋势、贸易网络与实时告警的数据管理控制台（演示数据）。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&family=PT+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/ops.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23000'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%23fff' stroke-width='2.6'/%3E%3Ccircle cx='13' cy='14' r='1.7' fill='%23fff'/%3E%3Ccircle cx='19.4' cy='14' r='1.7' fill='%23fff'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('ops-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <button class="smiley-toggle" id="themeToggle" type="button" aria-label="切换深浅主题" aria-pressed="false">
+      <span class="smiley-face" aria-hidden="true">
+        <span class="smiley-eye"></span><span class="smiley-eye"></span>
+        <span class="smiley-mouth"></span>
+      </span>
+    </button>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="#overview" data-spy="overview">总览</a>
+      <a href="#regions" data-spy="regions">区域</a>
+      <a href="#category" data-spy="category">品类</a>
+      <a href="#trend" data-spy="trend">趋势</a>
+      <a href="#network" data-spy="network">网络</a>
+      <a href="#data" data-spy="data">明细</a>
+    </nav>
+    <div class="header-meta">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span class="sf-mono">实时接入</span>
+      <span class="sf-mono header-clock" id="clock">--:--:--</span>
+    </div>
+  </div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" aria-label="指挥中心简介">
+  <div class="wrap">
+    <p class="hero-kicker sf-mono reveal">MERIDIAN GROUP · GLOBAL OPERATIONS COMMAND CENTER</p>
+    <h1 class="hero-title reveal">全球运营<br>一屏掌握</h1>
+    <p class="hero-lede reveal">营收、达成、库存、回款、干线、告警——14 个枢纽、7 个大区、5 条产品线的实时运营数据，汇入同一块屏幕。点击任意区域可下钻到订单明细。</p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-primary btn-magnet" href="#overview">进入指挥台</a>
+      <a class="btn btn-ghost" href="#data">查看订单明细</a>
+    </div>
+    <dl class="hero-pulse reveal" aria-label="实时脉搏">
+      <div class="pulse-item">
+        <dt class="sf-mono">在途货物</dt>
+        <dd><strong>58.6</strong> 亿美元 <span class="delta up">▲ 6.9% 同比</span></dd>
+      </div>
+      <div class="pulse-item">
+        <dt class="sf-mono">活跃枢纽</dt>
+        <dd><strong>14</strong> / 17 <span class="delta up">▲ 2 同比</span></dd>
+      </div>
+      <div class="pulse-item">
+        <dt class="sf-mono">数据延迟</dt>
+        <dd><strong>380</strong> ms <span class="delta down">▼ 12% 同比</span></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ SIGNATURE：滚动即数据流 ============ -->
+<section class="signature" id="signature" aria-label="签名动效：滚动即数据流">
+  <p class="signature-cap sf-mono" aria-hidden="true">SCROLL = DATA STREAM · 滚动即数据流</p>
+  <div class="letter-window" id="letterWindow" aria-hidden="true">
+    <div class="letter-track" id="letterTrack">
+      <div class="letter-set">
+        <span class="letter">M</span><span class="letter">E</span><span class="letter">R</span><span class="letter">I</span><span class="letter">D</span><span class="letter">I</span><span class="letter">A</span><span class="letter">N</span>
+      </div>
+      <div class="letter-set" aria-hidden="true">
+        <span class="letter">M</span><span class="letter">E</span><span class="letter">R</span><span class="letter">I</span><span class="letter">D</span><span class="letter">I</span><span class="letter">A</span><span class="letter">N</span>
+      </div>
+    </div>
+  </div>
+  <p class="sr-only">滚动页面时，巨型展示字 MERIDIAN 随滚动横向铺开，象征实时流动的运营数据流。</p>
+</section>
+
+<!-- ============ KPI 总览 ============ -->
+<section class="section" id="overview" aria-label="KPI 总览">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2>年度核心指标</h2>
+      <p class="sf-mono section-sub">FY2026 YTD · 全集团 · 数据截至今日 15:00</p>
+    </header>
+    <div class="kpi-grid">
+      <article class="kpi-card reveal">
+        <p class="kpi-label sf-mono">年度营收</p>
+        <p class="kpi-value"><span data-count="21.74" data-decimals="2">21.74</span><span class="kpi-unit">亿元</span></p>
+        <p class="kpi-delta up">▲ 14.2% 同比</p>
+        <svg class="spark" viewBox="0 0 120 36" aria-hidden="true"><path class="spark-path" d="M2 30 L18 26 L34 27 L50 20 L66 21 L82 13 L98 10 L118 4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </article>
+      <article class="kpi-card reveal">
+        <p class="kpi-label sf-mono">目标达成</p>
+        <p class="kpi-value"><span data-count="103.6" data-decimals="1">103.6</span><span class="kpi-unit">%</span></p>
+        <p class="kpi-delta up">▲ 3.1% 同比</p>
+        <svg class="spark" viewBox="0 0 120 36" aria-hidden="true"><path class="spark-path" d="M2 24 L18 25 L34 19 L50 22 L66 14 L82 15 L98 9 L118 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </article>
+      <article class="kpi-card reveal">
+        <p class="kpi-label sf-mono">毛利率</p>
+        <p class="kpi-value"><span data-count="38.2" data-decimals="1">38.2</span><span class="kpi-unit">%</span></p>
+        <p class="kpi-delta up">▲ 1.6% 同比</p>
+        <svg class="spark" viewBox="0 0 120 36" aria-hidden="true"><path class="spark-path" d="M2 22 L18 24 L34 20 L50 23 L66 17 L82 18 L98 12 L118 11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </article>
+      <article class="kpi-card reveal">
+        <p class="kpi-label sf-mono">回款率</p>
+        <p class="kpi-value"><span data-count="91.4" data-decimals="1">91.4</span><span class="kpi-unit">%</span></p>
+        <p class="kpi-delta up">▲ 2.2% 同比</p>
+        <svg class="spark" viewBox="0 0 120 36" aria-hidden="true"><path class="spark-path" d="M2 28 L18 25 L34 26 L50 18 L66 20 L82 14 L98 12 L118 8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </article>
+      <article class="kpi-card reveal">
+        <p class="kpi-label sf-mono">库存周转</p>
+        <p class="kpi-value"><span data-count="36.8" data-decimals="1">36.8</span><span class="kpi-unit">天</span></p>
+        <p class="kpi-delta down">▼ 4.1% 同比</p>
+        <svg class="spark" viewBox="0 0 120 36" aria-hidden="true"><path class="spark-path" d="M2 8 L18 11 L34 10 L50 15 L66 14 L82 19 L98 21 L118 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </article>
+      <article class="kpi-card reveal">
+        <p class="kpi-label sf-mono">在途货物</p>
+        <p class="kpi-value"><span data-count="58.6" data-decimals="1">58.6</span><span class="kpi-unit">亿美元</span></p>
+        <p class="kpi-delta up">▲ 6.9% 同比</p>
+        <svg class="spark" viewBox="0 0 120 36" aria-hidden="true"><path class="spark-path" d="M2 26 L18 22 L34 24 L50 17 L66 19 L82 12 L98 13 L118 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 区域达成率（可下钻） ============ -->
+<section class="section" id="regions" aria-label="区域达成率">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2>大区达成率</h2>
+      <p class="sf-mono section-sub">点击任意行，下钻到该区域的订单明细</p>
+    </header>
+    <div class="region-list" id="regionList" role="list">
+      <button class="region-row reveal" type="button" data-region="华东" role="listitem">
+        <span class="region-rank sf-mono">01</span>
+        <span class="region-name">华东</span>
+        <span class="region-bar"><span class="bar-fill" data-value="108" style="--pct:90%"></span></span>
+        <span class="region-value sf-mono">5.12 亿</span>
+        <span class="region-pct">108%</span>
+      </button>
+      <button class="region-row reveal" type="button" data-region="北美" role="listitem">
+        <span class="region-rank sf-mono">02</span>
+        <span class="region-name">北美</span>
+        <span class="region-bar"><span class="bar-fill" data-value="112" style="--pct:93.3%"></span></span>
+        <span class="region-value sf-mono">4.36 亿</span>
+        <span class="region-pct">112%</span>
+      </button>
+      <button class="region-row reveal" type="button" data-region="东南亚" role="listitem">
+        <span class="region-rank sf-mono">03</span>
+        <span class="region-name">东南亚</span>
+        <span class="region-bar"><span class="bar-fill" data-value="97" style="--pct:80.8%"></span></span>
+        <span class="region-value sf-mono">3.28 亿</span>
+        <span class="region-pct">97%</span>
+      </button>
+      <button class="region-row reveal" type="button" data-region="欧洲" role="listitem">
+        <span class="region-rank sf-mono">04</span>
+        <span class="region-name">欧洲</span>
+        <span class="region-bar"><span class="bar-fill" data-value="105" style="--pct:87.5%"></span></span>
+        <span class="region-value sf-mono">2.94 亿</span>
+        <span class="region-pct">105%</span>
+      </button>
+      <button class="region-row reveal" type="button" data-region="华北" role="listitem">
+        <span class="region-rank sf-mono">05</span>
+        <span class="region-name">华北</span>
+        <span class="region-bar"><span class="bar-fill" data-value="94" style="--pct:78.3%"></span></span>
+        <span class="region-value sf-mono">2.21 亿</span>
+        <span class="region-pct">94%</span>
+      </button>
+      <button class="region-row reveal" type="button" data-region="拉美" role="listitem">
+        <span class="region-rank sf-mono">06</span>
+        <span class="region-name">拉美</span>
+        <span class="region-bar"><span class="bar-fill" data-value="88" style="--pct:73.3%"></span></span>
+        <span class="region-value sf-mono">1.36 亿</span>
+        <span class="region-pct">88%</span>
+      </button>
+      <button class="region-row reveal" type="button" data-region="中东" role="listitem">
+        <span class="region-rank sf-mono">07</span>
+        <span class="region-name">中东</span>
+        <span class="region-bar"><span class="bar-fill" data-value="101" style="--pct:84.2%"></span></span>
+        <span class="region-value sf-mono">1.18 亿</span>
+        <span class="region-pct">101%</span>
+      </button>
+    </div>
+    <p class="region-note sf-mono reveal">当前下钻：<span id="drillState">全部区域</span> · <button class="link-btn" id="drillClear" type="button" hidden>清除下钻</button></p>
+  </div>
+</section>
+
+<!-- ============ 品类结构 + 库存周转 ============ -->
+<section class="section" id="category" aria-label="品类结构与库存周转">
+  <div class="wrap panel-grid">
+    <article class="panel reveal">
+      <header class="panel-head">
+        <h2>品类结构</h2>
+        <p class="sf-mono">按年度营收占比</p>
+      </header>
+      <div class="donut-wrap">
+        <svg class="donut" id="donut" viewBox="0 0 240 240" role="img" aria-label="品类结构环形图：智能硬件 34.6%，云服务 28.9%，技术服务 14.2%，工业模组 12.7%，配件耗材 9.6%">
+          <circle class="donut-seg" cx="120" cy="120" r="88" stroke-dasharray="187.31 552.92" stroke-dashoffset="0" style="--len:187.31; --pos:0; --c:var(--donut-1)" data-name="智能硬件"/>
+          <circle class="donut-seg" cx="120" cy="120" r="88" stroke-dasharray="155.79 552.92" stroke-dashoffset="-191.31" style="--len:155.79; --pos:191.31; --c:var(--donut-2)" data-name="云服务"/>
+          <circle class="donut-seg" cx="120" cy="120" r="88" stroke-dasharray="74.51 552.92" stroke-dashoffset="-351.10" style="--len:74.51; --pos:351.10; --c:var(--donut-3)" data-name="技术服务"/>
+          <circle class="donut-seg" cx="120" cy="120" r="88" stroke-dasharray="66.22 552.92" stroke-dashoffset="-429.61" style="--len:66.22; --pos:429.61; --c:var(--donut-4)" data-name="工业模组"/>
+          <circle class="donut-seg" cx="120" cy="120" r="88" stroke-dasharray="49.08 552.92" stroke-dashoffset="-499.83" style="--len:49.08; --pos:499.83; --c:var(--donut-5)" data-name="配件耗材"/>
+        </svg>
+        <div class="donut-center">
+          <span class="donut-total"><span data-count="21.74" data-decimals="2">21.74</span></span>
+          <span class="sf-mono">亿元 · 合计</span>
+        </div>
+      </div>
+      <ul class="legend">
+        <li><span class="dot" style="background:var(--donut-1)"></span>智能硬件<span class="sf-mono">34.6%</span></li>
+        <li><span class="dot" style="background:var(--donut-2)"></span>云服务<span class="sf-mono">28.9%</span></li>
+        <li><span class="dot" style="background:var(--donut-3)"></span>技术服务<span class="sf-mono">14.2%</span></li>
+        <li><span class="dot" style="background:var(--donut-4)"></span>工业模组<span class="sf-mono">12.7%</span></li>
+        <li><span class="dot" style="background:var(--donut-5)"></span>配件耗材<span class="sf-mono">9.6%</span></li>
+      </ul>
+    </article>
+
+    <article class="panel reveal" id="inventoryPanel">
+      <header class="panel-head">
+        <h2>库存周转</h2>
+        <p class="sf-mono">单位：天 · 阈值 40 天</p>
+      </header>
+      <div class="inv-list" id="invList">
+        <div class="inv-row" data-region="华东"><span class="inv-name">华东</span><span class="inv-bar"><span class="bar-fill" data-value="31.2" style="--pct:62.4%"></span></span><span class="inv-value sf-mono">31.2</span></div>
+        <div class="inv-row" data-region="北美"><span class="inv-name">北美</span><span class="inv-bar"><span class="bar-fill" data-value="28.6" style="--pct:57.2%"></span></span><span class="inv-value sf-mono">28.6</span></div>
+        <div class="inv-row" data-region="东南亚"><span class="inv-name">东南亚</span><span class="inv-bar"><span class="bar-fill" data-value="35.4" style="--pct:70.8%"></span></span><span class="inv-value sf-mono">35.4</span></div>
+        <div class="inv-row" data-region="欧洲"><span class="inv-name">欧洲</span><span class="inv-bar"><span class="bar-fill" data-value="33.8" style="--pct:67.6%"></span></span><span class="inv-value sf-mono">33.8</span></div>
+        <div class="inv-row" data-region="华北"><span class="inv-name">华北</span><span class="inv-bar"><span class="bar-fill" data-value="38.4" style="--pct:76.8%"></span></span><span class="inv-value sf-mono">38.4</span></div>
+        <div class="inv-row over" data-region="拉美"><span class="inv-name">拉美</span><span class="inv-bar"><span class="bar-fill" data-value="44.6" style="--pct:89.2%"></span></span><span class="inv-value sf-mono">44.6 <em>超期</em></span></div>
+        <div class="inv-row over" data-region="中东"><span class="inv-name">中东</span><span class="inv-bar"><span class="bar-fill" data-value="41.2" style="--pct:82.4%"></span></span><span class="inv-value sf-mono">41.2 <em>超期</em></span></div>
+      </div>
+      <p class="panel-note sf-mono" id="invNote">下钻区域后，此图仅显示该区域</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 营收趋势与目标 ============ -->
+<section class="section" id="trend" aria-label="营收趋势与目标">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2>营收趋势与目标</h2>
+      <p class="sf-mono section-sub">区域口径 · 实际 vs 目标 · 单位亿元</p>
+    </header>
+    <div class="seg-control reveal" id="trendSeg" role="tablist" aria-label="时间范围">
+      <span class="seg-indicator" id="segIndicator" aria-hidden="true"></span>
+      <button class="seg-btn is-active" type="button" role="tab" aria-selected="true" data-range="year">年度</button>
+      <button class="seg-btn" type="button" role="tab" aria-selected="false" data-range="quarter">季度</button>
+      <button class="seg-btn" type="button" role="tab" aria-selected="false" data-range="month">月度</button>
+    </div>
+    <div class="panel chart-panel reveal">
+      <svg class="trend-chart" id="trendChart" viewBox="0 0 720 300" role="img" aria-label="营收趋势折线图：实际营收全年爬升至 2.08 亿，持续高于目标线">
+        <g class="grid">
+          <line x1="40" y1="260" x2="700" y2="260"/><line x1="40" y1="192.5" x2="700" y2="192.5"/>
+          <line x1="40" y1="125" x2="700" y2="125"/><line x1="40" y1="57.5" x2="700" y2="57.5"/>
+        </g>
+        <g class="axis-label sf-mono" id="yLabels">
+          <text x="32" y="264" text-anchor="end">0</text><text x="32" y="196.5" text-anchor="end">0.6</text>
+          <text x="32" y="129" text-anchor="end">1.2</text><text x="32" y="61.5" text-anchor="end">1.8</text>
+          <text x="32" y="34" text-anchor="end">2.4</text>
+        </g>
+        <path class="trend-area" id="trendArea" d="M40 129.6 L98.2 135.3 L156.4 115 L214.5 111.5 L272.7 117.9 L330.9 103.3 L389.1 106 L447.3 91.3 L505.5 95.9 L563.6 83.1 L621.8 87.7 L680 69.3 L680 260 L40 260 Z"/>
+        <path class="trend-target" id="trendTarget" d="M40 117.9 L98.2 115.2 L156.4 113.3 L214.5 111.5 L272.7 108.7 L330.9 106.9 L389.1 104.2 L447.3 102.3 L505.5 99.6 L563.6 96.8 L621.8 94.9 L680 92.3" fill="none"/>
+        <path class="trend-line" id="trendLine" d="M40 129.6 L98.2 135.3 L156.4 115 L214.5 111.5 L272.7 117.9 L330.9 103.3 L389.1 106 L447.3 91.3 L505.5 95.9 L563.6 83.1 L621.8 87.7 L680 69.3" fill="none"/>
+        <g class="axis-label sf-mono month-label" id="xLabels">
+          <text x="40" y="284">1月</text><text x="98.2" y="284">2月</text><text x="156.4" y="284">3月</text><text x="214.5" y="284">4月</text><text x="272.7" y="284">5月</text><text x="330.9" y="284">6月</text><text x="389.1" y="284">7月</text><text x="447.3" y="284">8月</text><text x="505.5" y="284">9月</text><text x="563.6" y="284">10月</text><text x="621.8" y="284">11月</text><text x="680" y="284">12月</text>
+        </g>
+        <g class="trend-crosshair" id="trendCrosshair" hidden>
+          <line id="chLine" x1="0" y1="20" x2="0" y2="260"/>
+          <circle id="chDot" r="4.5" cx="0" cy="0"/>
+        </g>
+      </svg>
+      <div class="trend-readout sf-mono" id="trendReadout" aria-live="polite">1月 · 实际 1.42 亿 · 目标 1.55 亿</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 全球贸易网络 ============ -->
+<section class="section" id="network" aria-label="全球贸易网络">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2>全球贸易网络</h2>
+      <p class="sf-mono section-sub">GLOBAL TRADE NETWORK · REALTIME</p>
+    </header>
+    <div class="network-layout">
+      <div class="panel net-panel reveal">
+        <svg class="net-map" id="netMap" viewBox="120 0 720 465" role="img" aria-label="全球贸易网络示意图：12 个枢纽与 10 条干线，在途货物 58.6 亿美元">
+          <circle class="net-globe" cx="480" cy="230" r="170" fill="none"/>
+          <circle class="net-orbit" cx="480" cy="230" r="197" fill="none"/>
+          <circle class="net-globe-inner" cx="480" cy="230" r="140" fill="none"/>
+          <ellipse class="net-wire" cx="480" cy="230" rx="170" ry="46" fill="none"/>
+          <ellipse class="net-wire net-meridian" cx="480" cy="230" rx="58" ry="170" fill="none"/>
+          <ellipse class="net-wire net-meridian m2" cx="480" cy="230" rx="122" ry="170" fill="none"/>
+          <g id="netDots" aria-hidden="true"></g>
+          <g class="routes" fill="none">
+            <path class="route-beam" d="M565 82.8 Q437 73.3 332.8 145"/><path class="route" data-route="上海→洛杉矶" d="M565 82.8 Q437 73.3 332.8 145"/>
+            <path class="route-beam" d="M627.2 145 Q694.1 172.6 650 230"/><path class="route" data-route="深圳→新加坡" d="M627.2 145 Q694.1 172.6 650 230"/>
+            <path class="route-beam" d="M565 82.8 Q538.9 264 395 377.2"/><path class="route" data-route="上海→鹿特丹" d="M565 82.8 Q538.9 264 395 377.2"/>
+            <path class="route-beam" d="M310 230 Q265.9 287.4 332.8 315"/><path class="route" data-route="纽约→汉堡" d="M310 230 Q265.9 287.4 332.8 315"/>
+            <path class="route-beam" d="M650 230 Q594.8 344.8 480 400"/><path class="route" data-route="新加坡→迪拜" d="M650 230 Q594.8 344.8 480 400"/>
+            <path class="route-beam" d="M627.2 315 Q694.1 287.4 650 230"/><path class="route" data-route="悉尼→新加坡" d="M627.2 315 Q694.1 287.4 650 230"/>
+            <path class="route-beam" d="M332.8 145 Q265.9 172.6 310 230"/><path class="route" data-route="洛杉矶→纽约" d="M332.8 145 Q265.9 172.6 310 230"/>
+            <path class="route-beam" d="M565 377.2 Q537.4 444.1 480 400"/><path class="route" data-route="孟买→迪拜" d="M565 377.2 Q537.4 444.1 480 400"/>
+            <path class="route-beam" d="M395 82.8 Q307.9 130.6 310 230"/><path class="route" data-route="墨西哥城→纽约" d="M395 82.8 Q307.9 130.6 310 230"/>
+            <path class="route-beam" d="M480 60 Q537.4 15.9 565 82.8"/><path class="route" data-route="东京→上海" d="M480 60 Q537.4 15.9 565 82.8"/>
+          </g>
+          <g class="hubs">
+            <g class="hub" data-hub="东京" transform="translate(480 60)"><circle class="hub-hit" r="18" fill="transparent"/><circle r="5"/><text y="-12">东京</text></g>
+            <g class="hub" data-hub="上海" transform="translate(565 82.8)"><circle class="hub-pulse" r="7"/><circle class="hub-hit" r="18" fill="transparent"/><circle r="7"/><text y="-12">上海</text></g>
+            <g class="hub" data-hub="深圳" transform="translate(627.2 145)"><circle class="hub-hit" r="18" fill="transparent"/><circle r="5"/><text y="-12">深圳</text></g>
+            <g class="hub" data-hub="新加坡" transform="translate(650 230)"><circle class="hub-pulse" r="7"/><circle class="hub-hit" r="18" fill="transparent"/><circle r="6"/><text y="-12">新加坡</text></g>
+            <g class="hub" data-hub="悉尼" transform="translate(627.2 315)"><circle class="hub-hit" r="18" fill="transparent"/><circle r="5"/><text y="-12">悉尼</text></g>
+            <g class="hub" data-hub="孟买" transform="translate(565 377.2)"><circle class="hub-hit" r="18" fill="transparent"/><circle r="5"/><text y="-12">孟买</text></g>
+            <g class="hub" data-hub="迪拜" transform="translate(480 400)"><circle class="hub-pulse" r="7"/><circle class="hub-hit" r="18" fill="transparent"/><circle r="6"/><text y="-12">迪拜</text></g>
+            <g class="hub" data-hub="鹿特丹" transform="translate(395 377.2)"><circle class="hub-hit" r="18" fill="transparent"/><circle r="5"/><text y="-12">鹿特丹</text></g>
+            <g class="hub" data-hub="汉堡" transform="translate(332.8 315)"><circle class="hub-hit" r="18" fill="transparent"/><circle r="5"/><text y="-12">汉堡</text></g>
+            <g class="hub" data-hub="纽约" transform="translate(310 230)"><circle class="hub-pulse" r="7"/><circle class="hub-hit" r="18" fill="transparent"/><circle r="6"/><text y="-12">纽约</text></g>
+            <g class="hub" data-hub="洛杉矶" transform="translate(332.8 145)"><circle class="hub-hit" r="18" fill="transparent"/><circle r="5"/><text y="-12">洛杉矶</text></g>
+            <g class="hub" data-hub="墨西哥城" transform="translate(395 82.8)"><circle class="hub-hit" r="18" fill="transparent"/><circle r="5"/><text y="-12">墨西哥城</text></g>
+          </g>
+        </svg>
+        <p class="net-hint sf-mono">点击枢纽，查看其干线连接</p>
+      </div>
+      <aside class="panel net-side reveal" aria-live="polite">
+        <p class="sf-mono net-side-label">网络总览</p>
+        <p class="net-side-title" id="netSideTitle">全部枢纽</p>
+        <dl class="net-stats">
+          <div><dt class="sf-mono">枢纽</dt><dd id="netHubs">14</dd></div>
+          <div class="net-side-sep" aria-hidden="true"></div>
+          <div><dt class="sf-mono">干线</dt><dd id="netRoutes">10</dd></div>
+          <div class="net-side-sep" aria-hidden="true"></div>
+          <div><dt class="sf-mono">在途</dt><dd id="netValue">58.6 亿美元</dd></div>
+        </dl>
+        <p class="net-side-desc" id="netSideDesc">点击地图上的枢纽下钻；再次点击取消。干线虚线的流动方向即货运方向。</p>
+        <div class="net-top-routes">
+          <p class="sf-mono net-top-label">干线负载 TOP 3</p>
+          <ul>
+            <li><span class="tr-name">上海 → 鹿特丹</span><span class="tr-bar"><span class="bar-fill" style="--pct:100%"></span></span><span class="tr-val sf-mono">4.2 亿</span></li>
+            <li><span class="tr-name">深圳 → 新加坡</span><span class="tr-bar"><span class="bar-fill" style="--pct:86%"></span></span><span class="tr-val sf-mono">3.6 亿</span></li>
+            <li><span class="tr-name">新加坡 → 迪拜</span><span class="tr-bar"><span class="bar-fill" style="--pct:67%"></span></span><span class="tr-val sf-mono">2.8 亿</span></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 实时告警 ============ -->
+<section class="section" id="alerts" aria-label="实时告警">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2>实时告警</h2>
+      <p class="sf-mono section-sub">4 条高危 · 悬停暂停轮播</p>
+    </header>
+    <ul class="alert-list reveal" id="alertFeed">
+      <li class="alert-item"><span class="alert-time sf-mono">09:48</span><span class="alert-level lv-high">高</span><p>深圳口岸清关延迟，影响 3 票在途订单</p><span class="alert-amount sf-mono">1,240 万美元</span></li>
+      <li class="alert-item"><span class="alert-time sf-mono">08:36</span><span class="alert-level lv-mid">中</span><p>拉美区回款逾期 2 笔，需跟进催收</p><span class="alert-amount sf-mono">86 万美元</span></li>
+      <li class="alert-item"><span class="alert-time sf-mono">08:12</span><span class="alert-level lv-mid">中</span><p>北美仓工业模组 A2 库存低于安全水位</p><span class="alert-amount sf-mono">-42% 水位</span></li>
+      <li class="alert-item"><span class="alert-time sf-mono">07:55</span><span class="alert-level lv-low">低</span><p>欧洲区毛利率环比下滑 0.4 个百分点</p><span class="alert-amount sf-mono">-0.4pct</span></li>
+      <li class="alert-item"><span class="alert-time sf-mono">07:30</span><span class="alert-level lv-mid">中</span><p>迪拜枢纽单日吞吐量创新高</p><span class="alert-amount sf-mono">+28.2%</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 明细数据表 ============ -->
+<section class="section" id="data" aria-label="订单明细">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2>订单明细</h2>
+      <p class="sf-mono section-sub">排序 · 搜索 · 筛选 · 分页——与区域下钻联动</p>
+    </header>
+
+    <div class="table-toolbar reveal">
+      <label class="search-box">
+        <span class="sr-only">搜索订单</span>
+        <input type="search" id="tableSearch" placeholder="搜索订单号 / 客户 / 品类…" autocomplete="off">
+      </label>
+      <div class="chips" id="regionChips" role="group" aria-label="按区域筛选">
+        <button class="chip is-active" type="button" data-filter="all">全部</button>
+        <button class="chip" type="button" data-filter="华东">华东</button>
+        <button class="chip" type="button" data-filter="北美">北美</button>
+        <button class="chip" type="button" data-filter="东南亚">东南亚</button>
+        <button class="chip" type="button" data-filter="欧洲">欧洲</button>
+        <button class="chip" type="button" data-filter="华北">华北</button>
+        <button class="chip" type="button" data-filter="拉美">拉美</button>
+        <button class="chip" type="button" data-filter="中东">中东</button>
+      </div>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table class="data-table" id="dataTable">
+        <thead>
+          <tr>
+            <th scope="col" class="sortable" data-sort="id" data-type="text">订单号<span class="sort-arrow" aria-hidden="true"></span></th>
+            <th scope="col" class="sortable" data-sort="region" data-type="text">区域<span class="sort-arrow" aria-hidden="true"></span></th>
+            <th scope="col" class="sortable" data-sort="category" data-type="text">品类<span class="sort-arrow" aria-hidden="true"></span></th>
+            <th scope="col" class="sortable" data-sort="customer" data-type="text">客户<span class="sort-arrow" aria-hidden="true"></span></th>
+            <th scope="col" class="sortable num" data-sort="amount" data-type="num">金额 / 万美元<span class="sort-arrow" aria-hidden="true"></span></th>
+            <th scope="col">状态</th>
+            <th scope="col" class="sortable" data-sort="updated" data-type="text">更新时间<span class="sort-arrow" aria-hidden="true"></span></th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr data-id="MD-260401" data-region="华东" data-category="智能硬件" data-customer="Aurora Retail" data-amount="486.5" data-updated="11-03 14:22"><td class="mono">MD-260401</td><td>华东</td><td>智能硬件</td><td>Aurora Retail</td><td class="num mono">486.5</td><td><span class="status st-done">已完成</span></td><td class="mono">11-03 14:22</td></tr>
+          <tr data-id="MD-260402" data-region="北美" data-category="云服务" data-customer="Nimbus Cloud" data-amount="1240.0" data-updated="11-03 13:57"><td class="mono">MD-260402</td><td>北美</td><td>云服务</td><td>Nimbus Cloud</td><td class="num mono">1,240.0</td><td><span class="status st-transit">在途</span></td><td class="mono">11-03 13:57</td></tr>
+          <tr data-id="MD-260403" data-region="东南亚" data-category="技术服务" data-customer="Helios Energy" data-amount="312.8" data-updated="11-03 13:40"><td class="mono">MD-260403</td><td>东南亚</td><td>技术服务</td><td>Helios Energy</td><td class="num mono">312.8</td><td><span class="status st-done">已完成</span></td><td class="mono">11-03 13:40</td></tr>
+          <tr data-id="MD-260404" data-region="欧洲" data-category="工业模组" data-customer="Vertex Manufacturing" data-amount="758.2" data-updated="11-03 12:15"><td class="mono">MD-260404</td><td>欧洲</td><td>工业模组</td><td>Vertex Manufacturing</td><td class="num mono">758.2</td><td><span class="status st-pending">待付款</span></td><td class="mono">11-03 12:15</td></tr>
+          <tr data-id="MD-260405" data-region="华北" data-category="智能硬件" data-customer="Quartz Health" data-amount="268.4" data-updated="11-03 11:48"><td class="mono">MD-260405</td><td>华北</td><td>智能硬件</td><td>Quartz Health</td><td class="num mono">268.4</td><td><span class="status st-done">已完成</span></td><td class="mono">11-03 11:48</td></tr>
+          <tr data-id="MD-260406" data-region="拉美" data-category="配件耗材" data-customer="Cobalt Foods" data-amount="96.6" data-updated="11-03 11:20"><td class="mono">MD-260406</td><td>拉美</td><td>配件耗材</td><td>Cobalt Foods</td><td class="num mono">96.6</td><td><span class="status st-alert">异常</span></td><td class="mono">11-03 11:20</td></tr>
+          <tr data-id="MD-260407" data-region="中东" data-category="云服务" data-customer="Lumen Media" data-amount="534.0" data-updated="11-03 10:52"><td class="mono">MD-260407</td><td>中东</td><td>云服务</td><td>Lumen Media</td><td class="num mono">534.0</td><td><span class="status st-transit">在途</span></td><td class="mono">11-03 10:52</td></tr>
+          <tr data-id="MD-260408" data-region="华东" data-category="云服务" data-customer="Atlas Logistics" data-amount="892.4" data-updated="11-03 10:31"><td class="mono">MD-260408</td><td>华东</td><td>云服务</td><td>Atlas Logistics</td><td class="num mono">892.4</td><td><span class="status st-done">已完成</span></td><td class="mono">11-03 10:31</td></tr>
+          <tr data-id="MD-260409" data-region="北美" data-category="智能硬件" data-customer="Orion Mobility" data-amount="1120.6" data-updated="11-03 10:07"><td class="mono">MD-260409</td><td>北美</td><td>智能硬件</td><td>Orion Mobility</td><td class="num mono">1,120.6</td><td><span class="status st-transit">在途</span></td><td class="mono">11-03 10:07</td></tr>
+          <tr data-id="MD-260410" data-region="欧洲" data-category="技术服务" data-customer="Sable Finance" data-amount="204.2" data-updated="11-03 09:44"><td class="mono">MD-260410</td><td>欧洲</td><td>技术服务</td><td>Sable Finance</td><td class="num mono">204.2</td><td><span class="status st-done">已完成</span></td><td class="mono">11-03 09:44</td></tr>
+          <tr data-id="MD-260411" data-region="东南亚" data-category="工业模组" data-customer="Aurora Retail" data-amount="640.8" data-updated="11-03 09:18"><td class="mono">MD-260411</td><td>东南亚</td><td>工业模组</td><td>Aurora Retail</td><td class="num mono">640.8</td><td><span class="status st-pending">待付款</span></td><td class="mono">11-03 09:18</td></tr>
+          <tr data-id="MD-260412" data-region="华北" data-category="云服务" data-customer="Nimbus Cloud" data-amount="978.0" data-updated="11-03 08:55"><td class="mono">MD-260412</td><td>华北</td><td>云服务</td><td>Nimbus Cloud</td><td class="num mono">978.0</td><td><span class="status st-done">已完成</span></td><td class="mono">11-03 08:55</td></tr>
+          <tr data-id="MD-260413" data-region="中东" data-category="智能硬件" data-customer="Helios Energy" data-amount="452.6" data-updated="11-03 08:32"><td class="mono">MD-260413</td><td>中东</td><td>智能硬件</td><td>Helios Energy</td><td class="num mono">452.6</td><td><span class="status st-transit">在途</span></td><td class="mono">11-03 08:32</td></tr>
+          <tr data-id="MD-260414" data-region="拉美" data-category="技术服务" data-customer="Vertex Manufacturing" data-amount="158.4" data-updated="11-03 08:11"><td class="mono">MD-260414</td><td>拉美</td><td>技术服务</td><td>Vertex Manufacturing</td><td class="num mono">158.4</td><td><span class="status st-alert">异常</span></td><td class="mono">11-03 08:11</td></tr>
+          <tr data-id="MD-260415" data-region="华东" data-category="工业模组" data-customer="Quartz Health" data-amount="726.8" data-updated="11-02 18:47"><td class="mono">MD-260415</td><td>华东</td><td>工业模组</td><td>Quartz Health</td><td class="num mono">726.8</td><td><span class="status st-done">已完成</span></td><td class="mono">11-02 18:47</td></tr>
+          <tr data-id="MD-260416" data-region="北美" data-category="配件耗材" data-customer="Lumen Media" data-amount="74.2" data-updated="11-02 17:29"><td class="mono">MD-260416</td><td>北美</td><td>配件耗材</td><td>Lumen Media</td><td class="num mono">74.2</td><td><span class="status st-done">已完成</span></td><td class="mono">11-02 17:29</td></tr>
+          <tr data-id="MD-260417" data-region="欧洲" data-category="云服务" data-customer="Atlas Logistics" data-amount="1340.0" data-updated="11-02 16:53"><td class="mono">MD-260417</td><td>欧洲</td><td>云服务</td><td>Atlas Logistics</td><td class="num mono">1,340.0</td><td><span class="status st-transit">在途</span></td><td class="mono">11-02 16:53</td></tr>
+          <tr data-id="MD-260418" data-region="东南亚" data-category="智能硬件" data-customer="Cobalt Foods" data-amount="388.6" data-updated="11-02 16:20"><td class="mono">MD-260418</td><td>东南亚</td><td>智能硬件</td><td>Cobalt Foods</td><td class="num mono">388.6</td><td><span class="status st-done">已完成</span></td><td class="mono">11-02 16:20</td></tr>
+          <tr data-id="MD-260419" data-region="华北" data-category="工业模组" data-customer="Orion Mobility" data-amount="512.0" data-updated="11-02 15:46"><td class="mono">MD-260419</td><td>华北</td><td>工业模组</td><td>Orion Mobility</td><td class="num mono">512.0</td><td><span class="status st-pending">待付款</span></td><td class="mono">11-02 15:46</td></tr>
+          <tr data-id="MD-260420" data-region="中东" data-category="技术服务" data-customer="Sable Finance" data-amount="246.8" data-updated="11-02 15:12"><td class="mono">MD-260420</td><td>中东</td><td>技术服务</td><td>Sable Finance</td><td class="num mono">246.8</td><td><span class="status st-done">已完成</span></td><td class="mono">11-02 15:12</td></tr>
+          <tr data-id="MD-260421" data-region="拉美" data-category="云服务" data-customer="Aurora Retail" data-amount="604.4" data-updated="11-02 14:38"><td class="mono">MD-260421</td><td>拉美</td><td>云服务</td><td>Aurora Retail</td><td class="num mono">604.4</td><td><span class="status st-transit">在途</span></td><td class="mono">11-02 14:38</td></tr>
+          <tr data-id="MD-260422" data-region="华东" data-category="配件耗材" data-customer="Nimbus Cloud" data-amount="52.8" data-updated="11-02 14:05"><td class="mono">MD-260422</td><td>华东</td><td>配件耗材</td><td>Nimbus Cloud</td><td class="num mono">52.8</td><td><span class="status st-done">已完成</span></td><td class="mono">11-02 14:05</td></tr>
+          <tr data-id="MD-260423" data-region="北美" data-category="工业模组" data-customer="Helios Energy" data-amount="918.2" data-updated="11-02 13:41"><td class="mono">MD-260423</td><td>北美</td><td>工业模组</td><td>Helios Energy</td><td class="num mono">918.2</td><td><span class="status st-done">已完成</span></td><td class="mono">11-02 13:41</td></tr>
+          <tr data-id="MD-260424" data-region="欧洲" data-category="智能硬件" data-customer="Vertex Manufacturing" data-amount="662.6" data-updated="11-02 13:09"><td class="mono">MD-260424</td><td>欧洲</td><td>智能硬件</td><td>Vertex Manufacturing</td><td class="num mono">662.6</td><td><span class="status st-pending">待付款</span></td><td class="mono">11-02 13:09</td></tr>
+        </tbody>
+      </table>
+      <div class="table-empty" id="tableEmpty" hidden>
+        <p>没有匹配的订单</p>
+        <p class="sf-mono">试着清除筛选，或搜索其他关键词</p>
+      </div>
+    </div>
+
+    <div class="table-foot reveal">
+      <p class="sf-mono" id="tableCount" aria-live="polite">共 24 单</p>
+      <nav class="pager" id="pager" aria-label="分页">
+        <button class="pager-btn" id="prevPage" type="button" aria-label="上一页">←</button>
+        <span class="pager-pages" id="pagerPages"></span>
+        <button class="pager-btn" id="nextPage" type="button" aria-label="下一页">→</button>
+      </nav>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer-top">
+      <p class="footer-title">Meridian 集团<br>全球运营指挥中心</p>
+      <p class="sf-mono footer-note">数据口径：年度营收 21.74 亿元 = 七大区域 20.45 亿元 + 线上直营 1.29 亿元；目标达成按含直营口径计算。本页全部为虚构演示数据，用于展示数据管理界面，与任何真实企业无关。</p>
+    </div>
+    <div class="footer-bottom">
+      <span class="sf-mono">LAST SYNC <span id="footSync">--:--</span></span>
+      <span class="sf-mono">MERIDIAN OPS · DESIGN SYSTEM: OMSE-REF · MOTION: MOTION-INTERACTION-SKILL</span>
+    </div>
+  </div>
+</footer>
+
+</main>
+<script src="assets/ops.js" defer></script>
+</body>
+</html>

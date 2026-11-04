@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>AURELLE — 静奢护肤 · 高定美妆</title>
+<meta name="description" content="AURELLE 是一个独立高定护肤品牌，以静奢美学打造精华、面霜、洁面、香水等系列。简约即奢华。"/>
+<link rel="icon" type="image/svg+xml" href="assets/svg/favicon.svg"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<!-- 公告栏 -->
+<div class="announce" aria-label="公告">
+  <div class="announce-inner container" id="announce">
+    <p class="announce-item on">全线免邮 · 顺丰次日达</p>
+    <p class="announce-item">正品保障 · 假一赔十</p>
+    <p class="announce-item">会员专享 · 首单礼遇</p>
+  </div>
+</div>
+
+<!-- 顶栏 -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <nav class="nav" aria-label="主导航">
+      <a href="#brand">品牌</a>
+      <a href="#bestsellers">商店</a>
+      <a href="#journal">日志</a>
+      <a href="#values">服务</a>
+    </nav>
+    <a class="brand" href="#top" aria-label="AURELLE 首页">
+      <span class="mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="AURELLE 品牌标记：字母 A 与顶生叶">
+<title>AURELLE 品牌标记：字母 A 与顶生叶</title>
+<!--
+标记 = 圆角三角 A + 横杠 + 顶端一片实叶；单色 #111，小尺寸可辨；用于导航与页脚。
+-->
+
+  <g id="s0-logo-mark" transform="translate(0 11)">
+    <polygon points="120,32 212,210 28,210" fill="none" stroke="#111111" stroke-width="15" stroke-linejoin="round"/>
+    <rect x="74" y="156" width="92" height="15" rx="4" fill="#111111"/>
+    <path d="M119,33 C127,9 151,-3 167,7 C157,31 133,45 119,33 Z" fill="#111111"/>
+  </g>
+</svg></span>
+      <span class="word">AURELLE</span>
+    </a>
+    <div class="actions">
+      <button class="iconbtn" id="search-open" aria-label="搜索"><!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
+      <button class="iconbtn" id="account-btn" aria-label="账户"><!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"/></svg></button>
+      <button class="iconbtn cartbtn" id="cart-open" aria-label="购物袋">
+        <!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M160 80c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 384c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48c0-61.9-50.1-112-112-112S112 18.1 112 80l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg><span class="cart-count" id="cart-count">0</span>
+      </button>
+      <button class="iconbtn menu-btn" id="menu-open" aria-label="菜单"><!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Quiet Luxury · 静奢护肤</p>
+        <h1>肌肤的<br/>静奢美学</h1>
+        <p class="lede">AURELLE 是一个独立高定护肤品牌。以建筑般的克制线条与天然精粹，打造适合所有人日常使用的雕塑感配方——静默、隽永、与众不同。</p>
+        <div class="hero-cta">
+          <a class="btn btn-filled" href="#bestsellers">探索系列<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+          <a class="link-arrow" href="#brand">品牌故事<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+        </div>
+      </div>
+      <div class="hero-art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" aria-label="AURELLE 静物主视觉：精华、面霜与香水">
+<title>AURELLE 静物主视觉：精华、面霜与香水</title>
+<!--
+画布 800x620；L0 暖纸底 + 圆盘(径向渐变 #F3EEE4→#E8E1D2)；L1 远景香水方瓶(右后,0.92x)+线条枝(左下)；L2 主体精华滴管瓶(中,1.34x)；L3 前景面霜罐(左,1.06x)+琥珀液滴。光源左上，接地线 y≈470。
+-->
+
+  <defs>
+    <radialGradient id="s1-h-disc" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0" stop-color="#F3EEE4"/>
+      <stop offset="1" stop-color="#E8E1D2"/>
+    </radialGradient>
+    <g id="s1-h-sprig">
+      <path d="M0,0 C-14,-70 10,-128 -6,-200 C-16,-256 4,-300 -2,-330" fill="none" stroke="#111111" stroke-width="2.5" stroke-linecap="round"/>
+      <use href="#s1-h-leaf" transform="translate(-1,-50) rotate(-32)"/>
+      <use href="#s1-h-leaf" transform="translate(-2,-99) rotate(-148)"/>
+      <use href="#s1-h-leaf" transform="translate(-5,-155) rotate(-38)"/>
+      <use href="#s1-h-leaf" transform="translate(-4,-200) rotate(-142)"/>
+      <use href="#s1-h-leaf" transform="translate(-6,-240) rotate(-30)"/>
+      <use href="#s1-h-leaf" transform="translate(-5,-275) rotate(-150)"/>
+      <use href="#s1-h-leaf" transform="translate(-2,-310) rotate(-40)"/>
+      <circle cx="-2" cy="-338" r="5" fill="#C9A87C"/>
+    </g>
+    <g id="s1-h-leaf">
+      <path d="M0,0 C8,-14 34,-18 46,-4 C34,12 8,14 0,0 Z" fill="none" stroke="#111111" stroke-width="2"/>
+      <path d="M3,1 C15,-1 30,-2 43,-3" fill="none" stroke="#111111" stroke-width="1.2"/>
+    </g>
+  </defs>
+  <g id="s1-background">
+    <rect width="800" height="620" fill="#F4F2EB"/>
+    <circle cx="400" cy="268" r="248" fill="url(#s1-h-disc)"/>
+  </g>
+  <g id="s1-far">
+    <use href="#s1-h-sprig" transform="translate(96 452) scale(0.72)"/>
+    <g transform="translate(566 452) scale(0.92) translate(-200 -336)">
+  <ellipse cx="200" cy="336" rx="74" ry="11" fill="#000000" opacity="0.12"/>
+  <g id="s1-h-pf-perfume">
+    <clipPath id="s1-h-pf-clip-body"><rect x="152" y="214" width="96" height="116" rx="10"/></clipPath>
+    <rect x="152" y="214" width="96" height="116" rx="10" fill="#EDE7DD"/>
+    <g clip-path="url(#s1-h-pf-clip-body)"><rect x="152" y="264" width="96" height="66" fill="#C9A87C"/></g>
+    <g clip-path="url(#s1-h-pf-clip-body)"><g transform="translate(11 9)"><rect x="152" y="214" width="96" height="116" rx="10" fill="#EDE7DD"/></g></g>
+    <rect x="152" y="264" width="96" height="3" fill="#B3925F" opacity="0.7"/>
+    <rect x="160" y="224" width="6" height="88" rx="3" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="172" y="238" width="56" height="42" rx="4" fill="none" stroke="#111111" stroke-width="2.5" opacity="0.8"/>
+    <rect x="182" y="252" width="36" height="3" rx="1.5" fill="#111111" opacity="0.65"/><rect x="182" y="262" width="22" height="3" rx="1.5" fill="#111111" opacity="0.4"/>
+    <rect x="188" y="198" width="24" height="18" fill="#DCD3C4"/>
+    <rect x="180" y="144" width="40" height="56" rx="5" fill="#111111"/>
+    <rect x="187" y="152" width="5" height="40" rx="2.5" fill="#FFFFFF" opacity="0.2"/>
+  </g></g>
+  </g>
+  <g id="s1-subject">
+    <g transform="translate(398 470) scale(1.34) translate(-200 -336)">
+  <ellipse cx="200" cy="336" rx="80" ry="11" fill="#000000" opacity="0.12"/>
+  <g id="s1-h-se-serum">
+    <clipPath id="s1-h-se-clip-body"><rect x="158" y="196" width="84" height="134" rx="12"/></clipPath>
+    <rect x="158" y="196" width="84" height="134" rx="12" fill="#EDE7DD"/>
+    <g clip-path="url(#s1-h-se-clip-body)"><rect x="158" y="256" width="84" height="74" fill="#C9A87C"/></g>
+    <g clip-path="url(#s1-h-se-clip-body)"><g transform="translate(12 10)"><rect x="158" y="196" width="84" height="134" rx="12" fill="#EDE7DD"/></g></g>
+    <rect x="158" y="256" width="84" height="3" fill="#B3925F" opacity="0.7"/>
+    <rect x="166" y="208" width="6" height="100" rx="3" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="176" y="216" width="48" height="3" rx="1.5" fill="#111111" opacity="0.85"/><rect x="176" y="227" width="30" height="3" rx="1.5" fill="#111111" opacity="0.5"/>
+    <rect x="184" y="176" width="32" height="22" fill="#DCD3C4"/>
+    <rect x="196" y="170" width="8" height="32" fill="#FFFFFF" opacity="0.45"/>
+    <rect x="176" y="112" width="56" height="64" rx="10" fill="#111111"/>
+    <rect x="176" y="166" width="56" height="4" rx="2" fill="#000000" opacity="0.25"/>
+    <rect x="184" y="122" width="6" height="40" rx="3" fill="#FFFFFF" opacity="0.18"/>
+  </g></g>
+  </g>
+  <g id="s1-foreground">
+    <g transform="translate(240 472) scale(1.06) translate(-200 -336)">
+  <ellipse cx="200" cy="336" rx="96" ry="12" fill="#000000" opacity="0.12"/>
+  <g id="s1-h-cr-cream">
+    <clipPath id="s1-h-cr-clip-base"><rect x="138" y="252" width="124" height="78" rx="16"/></clipPath>
+    <rect x="138" y="252" width="124" height="78" rx="16" fill="#EDE7DD"/>
+    <g clip-path="url(#s1-h-cr-clip-base)"><g transform="translate(14 10)"><rect x="138" y="252" width="124" height="78" rx="16" fill="#EDE7DD"/></g></g>
+    <rect x="148" y="262" width="7" height="52" rx="3.5" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="168" y="288" width="64" height="3" rx="1.5" fill="#111111" opacity="0.55"/>
+    <rect x="130" y="214" width="140" height="42" rx="16" fill="#111111"/>
+    <rect x="130" y="248" width="140" height="4" rx="2" fill="#000000" opacity="0.22"/>
+    <rect x="140" y="222" width="8" height="26" rx="4" fill="#FFFFFF" opacity="0.16"/>
+    <rect x="187" y="198" width="26" height="18" rx="7" fill="#111111"/>
+  </g></g>
+    <path d="M398,52 C411,78 426,95 426,112 A28,28 0 1,1 370,112 C370,95 385,78 398,52 Z" fill="#C9A87C"/>
+    <ellipse cx="388" cy="106" rx="7" ry="11" fill="#FFFFFF" opacity="0.35" transform="rotate(-18 388 106)"/>
+  </g>
+
+</svg></div>
+    </div>
+  </section>
+
+  <!-- 品牌引言 -->
+  <section class="section" id="brand">
+    <div class="container intro reveal">
+      <p class="eyebrow">The Brand · 品牌</p>
+      <p class="strong">简约，即奢华。</p>
+      <p>AURELLE 诞生于对时尚、雕塑与建筑的热爱。每个系列都探索干净的线条、有机的质感与隽永的形式，在简约与个性之间取得平衡。我们相信，真正的奢华存在于克制的设计、诚实的手法，以及经得起时间考验的产品之中。</p>
+      <a class="link-arrow" href="#manifesto">阅读全文<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+    </div>
+  </section>
+
+  <!-- 新品编辑版式 -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">New Essences · 新品</p>
+          <h2>新品上市</h2>
+        </div>
+        <a class="link-arrow" href="#bestsellers">查看全部<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+      </div>
+      <article class="editorial reveal">
+        <div class="ed-art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="AURELLE 丝绒面霜罐">
+<title>AURELLE 丝绒面霜罐</title>
+<!--
+画布 400x400，接地线 y=330，光源左上；L0 舞台 #F4F2EB；L1 主体（底色→液体→阴影面 clip→高光→结构线→盖件）；落地投影先画。色彩角色与线宽层级见 docs/ASSET-SPEC.md。
+-->
+<rect x="0" y="0" width="400" height="400" fill="#F4F2EB"/>
+  <ellipse cx="200" cy="336" rx="96" ry="12" fill="#000000" opacity="0.12"/>
+  <g id="s2-p-cream">
+    <clipPath id="s2-p-clip-base"><rect x="138" y="252" width="124" height="78" rx="16"/></clipPath>
+    <rect x="138" y="252" width="124" height="78" rx="16" fill="#EDE7DD"/>
+    <g clip-path="url(#s2-p-clip-base)"><g transform="translate(14 10)"><rect x="138" y="252" width="124" height="78" rx="16" fill="#EDE7DD"/></g></g>
+    <rect x="148" y="262" width="7" height="52" rx="3.5" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="168" y="288" width="64" height="3" rx="1.5" fill="#111111" opacity="0.55"/>
+    <rect x="130" y="214" width="140" height="42" rx="16" fill="#111111"/>
+    <rect x="130" y="248" width="140" height="4" rx="2" fill="#000000" opacity="0.22"/>
+    <rect x="140" y="222" width="8" height="26" rx="4" fill="#FFFFFF" opacity="0.16"/>
+    <rect x="187" y="198" width="26" height="18" rx="7" fill="#111111"/>
+  </g>
+</svg></div>
+        <div class="ed-copy">
+          <p class="eyebrow">No.02 · 丝绒修护面霜</p>
+          <h3>丝绒质地，<br/>一触即融。</h3>
+          <p>以 24 小时缓释科技包裹的神经酰胺与白松露精粹，上脸如丝绒般化开，为肌肤织就一层透气的修护屏障。干纹与紧绷，在这一刻被温柔抚平。</p>
+          <a class="btn btn-ghost" href="#" data-quickview="cream">了解详情</a>
+        </div>
+      </article>
+      <article class="editorial flip reveal">
+        <div class="ed-art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="AURELLE 净透洁面泵瓶">
+<title>AURELLE 净透洁面泵瓶</title>
+<!--
+画布 400x400，接地线 y=330，光源左上；L0 舞台 #F4F2EB；L1 主体（底色→液体→阴影面 clip→高光→结构线→盖件）；落地投影先画。色彩角色与线宽层级见 docs/ASSET-SPEC.md。
+-->
+<rect x="0" y="0" width="400" height="400" fill="#F4F2EB"/>
+  <ellipse cx="200" cy="336" rx="66" ry="11" fill="#000000" opacity="0.12"/>
+  <g id="s3-p-cleanser">
+    <clipPath id="s3-p-clip-body"><rect x="164" y="210" width="72" height="120" rx="12"/></clipPath>
+    <rect x="164" y="210" width="72" height="120" rx="12" fill="#EDE7DD"/>
+    <g clip-path="url(#s3-p-clip-body)"><rect x="164" y="260" width="72" height="70" fill="#C9A87C"/></g>
+    <g clip-path="url(#s3-p-clip-body)"><g transform="translate(10 9)"><rect x="164" y="210" width="72" height="120" rx="12" fill="#EDE7DD"/></g></g>
+    <rect x="172" y="220" width="6" height="92" rx="3" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="178" y="240" width="44" height="3" rx="1.5" fill="#111111" opacity="0.5"/>
+    <rect x="186" y="196" width="28" height="16" fill="#DCD3C4"/>
+    <rect x="180" y="170" width="40" height="28" rx="4" fill="#111111"/>
+    <rect x="150" y="150" width="30" height="12" rx="4" fill="#111111"/>
+    <rect x="150" y="153" width="5" height="6" rx="1" fill="#444444"/>
+    <rect x="176" y="144" width="48" height="28" rx="7" fill="#111111"/>
+    <rect x="183" y="150" width="5" height="14" rx="2.5" fill="#FFFFFF" opacity="0.2"/>
+  </g>
+</svg></div>
+        <div class="ed-copy">
+          <p class="eyebrow">No.03 · 净透氨基酸洁面</p>
+          <h3>温和洗净，<br/>不夺半分水分。</h3>
+          <p>三重氨基酸表活搭配 apg 葡糖苷，微米级泡沫深入毛孔带走污垢，洗后肌肤柔软不紧绷——清洁，也可以是一种奢宠仪式。</p>
+          <a class="btn btn-ghost" href="#" data-quickview="cleanser">了解详情</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 畅销产品网格 -->
+  <section class="section" id="bestsellers" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Our Best Sellers · 明星单品</p>
+          <h2>镇店之选</h2>
+        </div>
+        <a class="link-arrow" href="#series">精华系列<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+      </div>
+      <div class="grid" id="product-grid">
+        <article class="card reveal" data-id="serum" data-name="焕采精华露" data-en="RADIANCE SERUM · NO.01" data-price="680" data-desc="滴管设计的焕采精华，3% 烟酰胺搭配发酵滤液，提亮肤色、细腻毛孔，28 天见证肌肤透光感。">
+          <div class="tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="AURELLE 焕采精华滴管瓶">
+<title>AURELLE 焕采精华滴管瓶</title>
+<!--
+画布 400x400，接地线 y=330，光源左上；L0 舞台 #F4F2EB；L1 主体（底色→液体→阴影面 clip→高光→结构线→盖件）；落地投影先画。色彩角色与线宽层级见 docs/ASSET-SPEC.md。
+-->
+<rect x="0" y="0" width="400" height="400" fill="#F4F2EB"/>
+  <ellipse cx="200" cy="336" rx="80" ry="11" fill="#000000" opacity="0.12"/>
+  <g id="s4-p-serum">
+    <clipPath id="s4-p-clip-body"><rect x="158" y="196" width="84" height="134" rx="12"/></clipPath>
+    <rect x="158" y="196" width="84" height="134" rx="12" fill="#EDE7DD"/>
+    <g clip-path="url(#s4-p-clip-body)"><rect x="158" y="256" width="84" height="74" fill="#C9A87C"/></g>
+    <g clip-path="url(#s4-p-clip-body)"><g transform="translate(12 10)"><rect x="158" y="196" width="84" height="134" rx="12" fill="#EDE7DD"/></g></g>
+    <rect x="158" y="256" width="84" height="3" fill="#B3925F" opacity="0.7"/>
+    <rect x="166" y="208" width="6" height="100" rx="3" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="176" y="216" width="48" height="3" rx="1.5" fill="#111111" opacity="0.85"/><rect x="176" y="227" width="30" height="3" rx="1.5" fill="#111111" opacity="0.5"/>
+    <rect x="184" y="176" width="32" height="22" fill="#DCD3C4"/>
+    <rect x="196" y="170" width="8" height="32" fill="#FFFFFF" opacity="0.45"/>
+    <rect x="176" y="112" width="56" height="64" rx="10" fill="#111111"/>
+    <rect x="176" y="166" width="56" height="4" rx="2" fill="#000000" opacity="0.25"/>
+    <rect x="184" y="122" width="6" height="40" rx="3" fill="#FFFFFF" opacity="0.18"/>
+  </g>
+</svg></div>
+          <div class="card-body"><h3>焕采精华露</h3><p class="en">RADIANCE SERUM · NO.01</p><p class="price">¥680</p></div>
+          <button class="card-quick" data-add="serum">加入购物袋</button>
+        </article>
+        <article class="card reveal" data-id="cream" data-name="丝绒修护面霜" data-en="VELVET CREAM · NO.02" data-price="880" data-desc="神经酰胺与白松露精粹的 24 小时缓释修护，丝绒质地一触即融，重塑肌肤屏障。">
+          <div class="tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="AURELLE 丝绒面霜罐">
+<title>AURELLE 丝绒面霜罐</title>
+<!--
+画布 400x400，接地线 y=330，光源左上；L0 舞台 #F4F2EB；L1 主体（底色→液体→阴影面 clip→高光→结构线→盖件）；落地投影先画。色彩角色与线宽层级见 docs/ASSET-SPEC.md。
+-->
+<rect x="0" y="0" width="400" height="400" fill="#F4F2EB"/>
+  <ellipse cx="200" cy="336" rx="96" ry="12" fill="#000000" opacity="0.12"/>
+  <g id="s5-p-cream">
+    <clipPath id="s5-p-clip-base"><rect x="138" y="252" width="124" height="78" rx="16"/></clipPath>
+    <rect x="138" y="252" width="124" height="78" rx="16" fill="#EDE7DD"/>
+    <g clip-path="url(#s5-p-clip-base)"><g transform="translate(14 10)"><rect x="138" y="252" width="124" height="78" rx="16" fill="#EDE7DD"/></g></g>
+    <rect x="148" y="262" width="7" height="52" rx="3.5" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="168" y="288" width="64" height="3" rx="1.5" fill="#111111" opacity="0.55"/>
+    <rect x="130" y="214" width="140" height="42" rx="16" fill="#111111"/>
+    <rect x="130" y="248" width="140" height="4" rx="2" fill="#000000" opacity="0.22"/>
+    <rect x="140" y="222" width="8" height="26" rx="4" fill="#FFFFFF" opacity="0.16"/>
+    <rect x="187" y="198" width="26" height="18" rx="7" fill="#111111"/>
+  </g>
+</svg></div>
+          <div class="card-body"><h3>丝绒修护面霜</h3><p class="en">VELVET CREAM · NO.02</p><p class="price">¥880</p></div>
+          <button class="card-quick" data-add="cream">加入购物袋</button>
+        </article>
+        <article class="card reveal" data-id="cleanser" data-name="净透氨基酸洁面" data-en="GENTLE CLEANSER · NO.03" data-price="320" data-desc="三重氨基酸表活，微米级泡沫深入清洁，洗后柔软不紧绷。">
+          <div class="tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="AURELLE 净透洁面泵瓶">
+<title>AURELLE 净透洁面泵瓶</title>
+<!--
+画布 400x400，接地线 y=330，光源左上；L0 舞台 #F4F2EB；L1 主体（底色→液体→阴影面 clip→高光→结构线→盖件）；落地投影先画。色彩角色与线宽层级见 docs/ASSET-SPEC.md。
+-->
+<rect x="0" y="0" width="400" height="400" fill="#F4F2EB"/>
+  <ellipse cx="200" cy="336" rx="66" ry="11" fill="#000000" opacity="0.12"/>
+  <g id="s6-p-cleanser">
+    <clipPath id="s6-p-clip-body"><rect x="164" y="210" width="72" height="120" rx="12"/></clipPath>
+    <rect x="164" y="210" width="72" height="120" rx="12" fill="#EDE7DD"/>
+    <g clip-path="url(#s6-p-clip-body)"><rect x="164" y="260" width="72" height="70" fill="#C9A87C"/></g>
+    <g clip-path="url(#s6-p-clip-body)"><g transform="translate(10 9)"><rect x="164" y="210" width="72" height="120" rx="12" fill="#EDE7DD"/></g></g>
+    <rect x="172" y="220" width="6" height="92" rx="3" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="178" y="240" width="44" height="3" rx="1.5" fill="#111111" opacity="0.5"/>
+    <rect x="186" y="196" width="28" height="16" fill="#DCD3C4"/>
+    <rect x="180" y="170" width="40" height="28" rx="4" fill="#111111"/>
+    <rect x="150" y="150" width="30" height="12" rx="4" fill="#111111"/>
+    <rect x="150" y="153" width="5" height="6" rx="1" fill="#444444"/>
+    <rect x="176" y="144" width="48" height="28" rx="7" fill="#111111"/>
+    <rect x="183" y="150" width="5" height="14" rx="2.5" fill="#FFFFFF" opacity="0.2"/>
+  </g>
+</svg></div>
+          <div class="card-body"><h3>净透氨基酸洁面</h3><p class="en">GENTLE CLEANSER · NO.03</p><p class="price">¥320</p></div>
+          <button class="card-quick" data-add="cleanser">加入购物袋</button>
+        </article>
+        <article class="card reveal" data-id="perfume" data-name="琥珀香水" data-en="AMBER EAU DE PARFUM · NO.04" data-price="980" data-desc="琥珀、雪松与鸢尾的木质花香结构，留香 8 小时，如一件贴身的雕塑。">
+          <div class="tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="AURELLE 琥珀香水方瓶">
+<title>AURELLE 琥珀香水方瓶</title>
+<!--
+画布 400x400，接地线 y=330，光源左上；L0 舞台 #F4F2EB；L1 主体（底色→液体→阴影面 clip→高光→结构线→盖件）；落地投影先画。色彩角色与线宽层级见 docs/ASSET-SPEC.md。
+-->
+<rect x="0" y="0" width="400" height="400" fill="#F4F2EB"/>
+  <ellipse cx="200" cy="336" rx="74" ry="11" fill="#000000" opacity="0.12"/>
+  <g id="s7-p-perfume">
+    <clipPath id="s7-p-clip-body"><rect x="152" y="214" width="96" height="116" rx="10"/></clipPath>
+    <rect x="152" y="214" width="96" height="116" rx="10" fill="#EDE7DD"/>
+    <g clip-path="url(#s7-p-clip-body)"><rect x="152" y="264" width="96" height="66" fill="#C9A87C"/></g>
+    <g clip-path="url(#s7-p-clip-body)"><g transform="translate(11 9)"><rect x="152" y="214" width="96" height="116" rx="10" fill="#EDE7DD"/></g></g>
+    <rect x="152" y="264" width="96" height="3" fill="#B3925F" opacity="0.7"/>
+    <rect x="160" y="224" width="6" height="88" rx="3" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="172" y="238" width="56" height="42" rx="4" fill="none" stroke="#111111" stroke-width="2.5" opacity="0.8"/>
+    <rect x="182" y="252" width="36" height="3" rx="1.5" fill="#111111" opacity="0.65"/><rect x="182" y="262" width="22" height="3" rx="1.5" fill="#111111" opacity="0.4"/>
+    <rect x="188" y="198" width="24" height="18" fill="#DCD3C4"/>
+    <rect x="180" y="144" width="40" height="56" rx="5" fill="#111111"/>
+    <rect x="187" y="152" width="5" height="40" rx="2.5" fill="#FFFFFF" opacity="0.2"/>
+  </g>
+</svg></div>
+          <div class="card-body"><h3>琥珀香水</h3><p class="en">AMBER EAU DE PARFUM · NO.04</p><p class="price">¥980</p></div>
+          <button class="card-quick" data-add="perfume">加入购物袋</button>
+        </article>
+        <article class="card reveal" data-id="lip" data-name="绒光唇釉" data-en="VELVET LIP · NO.05" data-price="260" data-desc="丝绒雾面质地，一抹显色不拔干，琥珀色调适合亚洲肤色。">
+          <div class="tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="AURELLE 绒光唇釉">
+<title>AURELLE 绒光唇釉</title>
+<!--
+画布 400x400，接地线 y=330，光源左上；L0 舞台 #F4F2EB；L1 主体（底色→液体→阴影面 clip→高光→结构线→盖件）；落地投影先画。色彩角色与线宽层级见 docs/ASSET-SPEC.md。
+-->
+<rect x="0" y="0" width="400" height="400" fill="#F4F2EB"/>
+  <ellipse cx="200" cy="336" rx="42" ry="9" fill="#000000" opacity="0.12"/>
+  <g id="s8-p-lip">
+    <path d="M187,238 L213,238 L209,204 L196,182 L187,204 Z" fill="#C9A87C" stroke="#C9A87C" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M193,232 L197,232 L194,198 L190,206 Z" fill="#FFFFFF" opacity="0.35"/>
+    <rect x="182" y="238" width="36" height="92" rx="8" fill="#111111"/>
+    <rect x="182" y="262" width="36" height="5" fill="#C9A87C"/>
+    <rect x="188" y="248" width="4" height="66" rx="2" fill="#FFFFFF" opacity="0.16"/>
+  </g>
+</svg></div>
+          <div class="card-body"><h3>绒光唇釉</h3><p class="en">VELVET LIP · NO.05</p><p class="price">¥260</p></div>
+          <button class="card-quick" data-add="lip">加入购物袋</button>
+        </article>
+        <article class="card reveal" data-id="oil" data-name="金盏护理油" data-en="CALENDULA OIL · NO.06" data-price="520" data-desc="冷压金盏花与角鲨烷，掌心温热后按压上脸，肌肤即刻柔软透亮。">
+          <div class="tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="AURELLE 金盏护理油瓶">
+<title>AURELLE 金盏护理油瓶</title>
+<!--
+画布 400x400，接地线 y=330，光源左上；L0 舞台 #F4F2EB；L1 主体（底色→液体→阴影面 clip→高光→结构线→盖件）；落地投影先画。色彩角色与线宽层级见 docs/ASSET-SPEC.md。
+-->
+<rect x="0" y="0" width="400" height="400" fill="#F4F2EB"/>
+  <ellipse cx="200" cy="336" rx="54" ry="11" fill="#000000" opacity="0.12"/>
+  <g id="s9-p-oil">
+    <clipPath id="s9-p-clip-body"><rect x="172" y="222" width="56" height="108" rx="9"/></clipPath>
+    <rect x="172" y="222" width="56" height="108" rx="9" fill="#EDE7DD"/>
+    <g clip-path="url(#s9-p-clip-body)"><rect x="172" y="266" width="56" height="64" fill="#C9A87C"/></g>
+    <g clip-path="url(#s9-p-clip-body)"><g transform="translate(9 8)"><rect x="172" y="222" width="56" height="108" rx="9" fill="#EDE7DD"/></g></g>
+    <rect x="178" y="232" width="5" height="82" rx="2.5" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="182" y="246" width="36" height="3" rx="1.5" fill="#111111" opacity="0.85"/><rect x="182" y="256" width="20" height="3" rx="1.5" fill="#111111" opacity="0.5"/>
+    <rect x="188" y="206" width="24" height="18" fill="#DCD3C4"/>
+    <rect x="196" y="198" width="8" height="36" fill="#FFFFFF" opacity="0.45"/>
+    <rect x="176" y="140" width="48" height="68" rx="7" fill="#111111"/>
+    <rect x="183" y="148" width="5" height="50" rx="2.5" fill="#FFFFFF" opacity="0.2"/>
+  </g>
+</svg></div>
+          <div class="card-body"><h3>金盏护理油</h3><p class="en">CALENDULA OIL · NO.06</p><p class="price">¥520</p></div>
+          <button class="card-quick" data-add="oil">加入购物袋</button>
+        </article>
+        <article class="card reveal" data-id="mist" data-name="衡润保湿喷雾" data-en="DEW MIST · NO.07" data-price="380" data-desc="微米雾化泵头，随时随地补水定妆，肌肤如晨露般清透。">
+          <div class="tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="AURELLE 衡润喷雾罐">
+<title>AURELLE 衡润喷雾罐</title>
+<!--
+画布 400x400，接地线 y=330，光源左上；L0 舞台 #F4F2EB；L1 主体（底色→液体→阴影面 clip→高光→结构线→盖件）；落地投影先画。色彩角色与线宽层级见 docs/ASSET-SPEC.md。
+-->
+<rect x="0" y="0" width="400" height="400" fill="#F4F2EB"/>
+  <ellipse cx="200" cy="336" rx="66" ry="11" fill="#000000" opacity="0.12"/>
+  <g id="s10-p-mist">
+    <clipPath id="s10-p-clip-body"><rect x="162" y="206" width="76" height="124" rx="14"/></clipPath>
+    <rect x="162" y="206" width="76" height="124" rx="14" fill="#EDE7DD"/>
+    <g clip-path="url(#s10-p-clip-body)"><rect x="162" y="240" width="76" height="42" fill="#FFFFFF" opacity="0.35"/></g>
+    <g clip-path="url(#s10-p-clip-body)"><g transform="translate(10 9)"><rect x="162" y="206" width="76" height="124" rx="14" fill="#EDE7DD"/></g></g>
+    <rect x="170" y="216" width="6" height="96" rx="3" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="178" y="296" width="44" height="3" rx="1.5" fill="#111111" opacity="0.5"/>
+    <rect x="178" y="182" width="44" height="26" rx="4" fill="#111111"/>
+    <rect x="170" y="206" width="60" height="4" rx="2" fill="#DCD3C4"/>
+    <polygon points="190,184 190,160 208,160 214,170 208,184" fill="#111111"/>
+    <circle cx="224" cy="170" r="3" fill="#C9A87C" opacity="0.7"/>
+    <circle cx="234" cy="164" r="4" fill="#C9A87C" opacity="0.55"/>
+    <circle cx="245" cy="156" r="2.5" fill="#C9A87C" opacity="0.4"/>
+  </g>
+</svg></div>
+          <div class="card-body"><h3>衡润保湿喷雾</h3><p class="en">DEW MIST · NO.07</p><p class="price">¥380</p></div>
+          <button class="card-quick" data-add="mist">加入购物袋</button>
+        </article>
+        <article class="card reveal" data-id="mask" data-name="泥养焕亮面膜" data-en="CLAY MASK · NO.08" data-price="460" data-desc="高岭土与亚马逊白泥，10 分钟吸附油脂污垢，洗后毛孔会呼吸。">
+          <div class="tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="AURELLE 泥养面膜罐">
+<title>AURELLE 泥养面膜罐</title>
+<!--
+画布 400x400，接地线 y=330，光源左上；L0 舞台 #F4F2EB；L1 主体（底色→液体→阴影面 clip→高光→结构线→盖件）；落地投影先画。色彩角色与线宽层级见 docs/ASSET-SPEC.md。
+-->
+<rect x="0" y="0" width="400" height="400" fill="#F4F2EB"/>
+  <ellipse cx="200" cy="336" rx="102" ry="12" fill="#000000" opacity="0.12"/>
+  <g id="s11-p-mask">
+    <clipPath id="s11-p-clip-base"><rect x="128" y="258" width="144" height="72" rx="18"/></clipPath>
+    <rect x="128" y="258" width="144" height="72" rx="18" fill="#EDE7DD"/>
+    <g clip-path="url(#s11-p-clip-base)"><g transform="translate(15 10)"><rect x="128" y="258" width="144" height="72" rx="18" fill="#EDE7DD"/></g></g>
+    <rect x="140" y="268" width="7" height="46" rx="3.5" fill="#FFFFFF" opacity="0.5"/>
+    <circle cx="200" cy="296" r="15" fill="none" stroke="#111111" stroke-width="2" opacity="0.5"/>
+    <path d="M200,290 C206,296 206,302 200,306 C194,302 194,296 200,290 Z" fill="#111111" opacity="0.5"/>
+    <rect x="122" y="224" width="156" height="38" rx="16" fill="#F7F4EC"/>
+    <rect x="122" y="252" width="156" height="3" fill="#111111" opacity="0.15"/>
+    <rect x="186" y="208" width="28" height="18" rx="8" fill="#DCD3C4"/>
+  </g>
+</svg></div>
+          <div class="card-body"><h3>泥养焕亮面膜</h3><p class="en">CLAY MASK · NO.08</p><p class="price">¥460</p></div>
+          <button class="card-quick" data-add="mask">加入购物袋</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 深色系列区 -->
+  <section class="section dark" id="series">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">The Serum Edit · 精华系列</p>
+          <h2>三件仪式</h2>
+        </div>
+        <a class="link-arrow" href="#bestsellers">查看全部<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+      </div>
+      <div class="series">
+        <article class="card reveal" data-id="serum" data-name="焕采精华露" data-en="RADIANCE SERUM · NO.01" data-price="680" data-desc="滴管设计的焕采精华，3% 烟酰胺搭配发酵滤液，提亮肤色、细腻毛孔。">
+          <div class="tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="AURELLE 焕采精华滴管瓶">
+<title>AURELLE 焕采精华滴管瓶</title>
+<!--
+画布 400x400，接地线 y=330，光源左上；L0 舞台 #F4F2EB；L1 主体（底色→液体→阴影面 clip→高光→结构线→盖件）；落地投影先画。色彩角色与线宽层级见 docs/ASSET-SPEC.md。
+-->
+<rect x="0" y="0" width="400" height="400" fill="#F4F2EB"/>
+  <ellipse cx="200" cy="336" rx="80" ry="11" fill="#000000" opacity="0.12"/>
+  <g id="s12-p-serum">
+    <clipPath id="s12-p-clip-body"><rect x="158" y="196" width="84" height="134" rx="12"/></clipPath>
+    <rect x="158" y="196" width="84" height="134" rx="12" fill="#EDE7DD"/>
+    <g clip-path="url(#s12-p-clip-body)"><rect x="158" y="256" width="84" height="74" fill="#C9A87C"/></g>
+    <g clip-path="url(#s12-p-clip-body)"><g transform="translate(12 10)"><rect x="158" y="196" width="84" height="134" rx="12" fill="#EDE7DD"/></g></g>
+    <rect x="158" y="256" width="84" height="3" fill="#B3925F" opacity="0.7"/>
+    <rect x="166" y="208" width="6" height="100" rx="3" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="176" y="216" width="48" height="3" rx="1.5" fill="#111111" opacity="0.85"/><rect x="176" y="227" width="30" height="3" rx="1.5" fill="#111111" opacity="0.5"/>
+    <rect x="184" y="176" width="32" height="22" fill="#DCD3C4"/>
+    <rect x="196" y="170" width="8" height="32" fill="#FFFFFF" opacity="0.45"/>
+    <rect x="176" y="112" width="56" height="64" rx="10" fill="#111111"/>
+    <rect x="176" y="166" width="56" height="4" rx="2" fill="#000000" opacity="0.25"/>
+    <rect x="184" y="122" width="6" height="40" rx="3" fill="#FFFFFF" opacity="0.18"/>
+  </g>
+</svg></div>
+          <div class="card-body"><h3>焕采精华露</h3><p class="en">RADIANCE SERUM · NO.01</p><p class="price">¥680</p></div>
+          <button class="card-quick" data-add="serum">加入购物袋</button>
+        </article>
+        <article class="card reveal" data-id="oil" data-name="金盏护理油" data-en="CALENDULA OIL · NO.06" data-price="520" data-desc="冷压金盏花与角鲨烷，掌心温热后按压上脸。">
+          <div class="tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="AURELLE 金盏护理油瓶">
+<title>AURELLE 金盏护理油瓶</title>
+<!--
+画布 400x400，接地线 y=330，光源左上；L0 舞台 #F4F2EB；L1 主体（底色→液体→阴影面 clip→高光→结构线→盖件）；落地投影先画。色彩角色与线宽层级见 docs/ASSET-SPEC.md。
+-->
+<rect x="0" y="0" width="400" height="400" fill="#F4F2EB"/>
+  <ellipse cx="200" cy="336" rx="54" ry="11" fill="#000000" opacity="0.12"/>
+  <g id="s13-p-oil">
+    <clipPath id="s13-p-clip-body"><rect x="172" y="222" width="56" height="108" rx="9"/></clipPath>
+    <rect x="172" y="222" width="56" height="108" rx="9" fill="#EDE7DD"/>
+    <g clip-path="url(#s13-p-clip-body)"><rect x="172" y="266" width="56" height="64" fill="#C9A87C"/></g>
+    <g clip-path="url(#s13-p-clip-body)"><g transform="translate(9 8)"><rect x="172" y="222" width="56" height="108" rx="9" fill="#EDE7DD"/></g></g>
+    <rect x="178" y="232" width="5" height="82" rx="2.5" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="182" y="246" width="36" height="3" rx="1.5" fill="#111111" opacity="0.85"/><rect x="182" y="256" width="20" height="3" rx="1.5" fill="#111111" opacity="0.5"/>
+    <rect x="188" y="206" width="24" height="18" fill="#DCD3C4"/>
+    <rect x="196" y="198" width="8" height="36" fill="#FFFFFF" opacity="0.45"/>
+    <rect x="176" y="140" width="48" height="68" rx="7" fill="#111111"/>
+    <rect x="183" y="148" width="5" height="50" rx="2.5" fill="#FFFFFF" opacity="0.2"/>
+  </g>
+</svg></div>
+          <div class="card-body"><h3>金盏护理油</h3><p class="en">CALENDULA OIL · NO.06</p><p class="price">¥520</p></div>
+          <button class="card-quick" data-add="oil">加入购物袋</button>
+        </article>
+        <article class="card reveal" data-id="perfume" data-name="琥珀香水" data-en="AMBER EAU DE PARFUM · NO.04" data-price="980" data-desc="琥珀、雪松与鸢尾的木质花香结构，留香 8 小时。">
+          <div class="tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="AURELLE 琥珀香水方瓶">
+<title>AURELLE 琥珀香水方瓶</title>
+<!--
+画布 400x400，接地线 y=330，光源左上；L0 舞台 #F4F2EB；L1 主体（底色→液体→阴影面 clip→高光→结构线→盖件）；落地投影先画。色彩角色与线宽层级见 docs/ASSET-SPEC.md。
+-->
+<rect x="0" y="0" width="400" height="400" fill="#F4F2EB"/>
+  <ellipse cx="200" cy="336" rx="74" ry="11" fill="#000000" opacity="0.12"/>
+  <g id="s14-p-perfume">
+    <clipPath id="s14-p-clip-body"><rect x="152" y="214" width="96" height="116" rx="10"/></clipPath>
+    <rect x="152" y="214" width="96" height="116" rx="10" fill="#EDE7DD"/>
+    <g clip-path="url(#s14-p-clip-body)"><rect x="152" y="264" width="96" height="66" fill="#C9A87C"/></g>
+    <g clip-path="url(#s14-p-clip-body)"><g transform="translate(11 9)"><rect x="152" y="214" width="96" height="116" rx="10" fill="#EDE7DD"/></g></g>
+    <rect x="152" y="264" width="96" height="3" fill="#B3925F" opacity="0.7"/>
+    <rect x="160" y="224" width="6" height="88" rx="3" fill="#FFFFFF" opacity="0.5"/>
+    <rect x="172" y="238" width="56" height="42" rx="4" fill="none" stroke="#111111" stroke-width="2.5" opacity="0.8"/>
+    <rect x="182" y="252" width="36" height="3" rx="1.5" fill="#111111" opacity="0.65"/><rect x="182" y="262" width="22" height="3" rx="1.5" fill="#111111" opacity="0.4"/>
+    <rect x="188" y="198" width="24" height="18" fill="#DCD3C4"/>
+    <rect x="180" y="144" width="40" height="56" rx="5" fill="#111111"/>
+    <rect x="187" y="152" width="5" height="40" rx="2.5" fill="#FFFFFF" opacity="0.2"/>
+  </g>
+</svg></div>
+          <div class="card-body"><h3>琥珀香水</h3><p class="en">AMBER EAU DE PARFUM · NO.04</p><p class="price">¥980</p></div>
+          <button class="card-quick" data-add="perfume">加入购物袋</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌宣言 -->
+  <section class="section" id="manifesto">
+    <div class="container manifesto reveal">
+      <div class="sprig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380" role="img" aria-label="AURELLE 单叶线条枝">
+<title>AURELLE 单叶线条枝</title>
+<!--
+枝干曲线由 smooth-path.mjs points 模式生成；6 叶交替 ±(30~50)°，顶端琥珀芽点；纯线条 stroke 2 / 2.5 两档。
+-->
+
+  <g id="s15-sprig">
+    <path d="M150,352 C147.7,340.3 134.3,303.3 136,282 C137.7,260.7 158.7,245.7 160,224 C161.3,202.3 144.3,175.3 144,152 C143.7,128.7 157,103.3 158,84 C159,64.7 151.3,44 150,36" fill="none" stroke="#111111" stroke-width="2.5" stroke-linecap="round"/>
+    <g id="s15-s-leaf">
+      <path d="M0,0 C8,-14 34,-18 46,-4 C34,12 8,14 0,0 Z" fill="none" stroke="#111111" stroke-width="2"/>
+      <path d="M3,1 C15,-1 30,-2 43,-3" fill="none" stroke="#111111" stroke-width="1.2"/>
+    </g>
+    <use href="#s15-s-leaf" transform="translate(142 321) rotate(-32)"/>
+    <use href="#s15-s-leaf" transform="translate(136 282) rotate(-148)"/>
+    <use href="#s15-s-leaf" transform="translate(148 253) rotate(-38)"/>
+    <use href="#s15-s-leaf" transform="translate(160 224) rotate(-142)"/>
+    <use href="#s15-s-leaf" transform="translate(153 189) rotate(-30)"/>
+    <use href="#s15-s-leaf" transform="translate(144 152) rotate(-150)"/>
+    <use href="#s15-s-leaf" transform="translate(151 117) rotate(-40)"/>
+    <use href="#s15-s-leaf" transform="translate(158 84) rotate(-140)"/>
+    <use href="#s15-s-leaf" transform="translate(155 56) rotate(-34)"/>
+    <circle cx="150" cy="30" r="5" fill="#C9A87C"/>
+  </g>
+</svg></div>
+      <div>
+        <p class="eyebrow">A Statement · 品牌宣言</p>
+        <h2>超越护肤的态度</h2>
+        <p>AURELLE 拒绝潮流的指令。我们的系列将雕塑感设计与轻松的日常使用合而为一——不追逐季节，只追随成分与形式的本质。</p>
+        <p>每一件产品都在自有实验室完成配方，在小批量中灌装。我们相信，少一点，好一点。</p>
+        <a class="link-arrow" href="#values" style="margin-top:24px">我们的承诺<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 价值观 -->
+  <section class="section" id="values" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Our Values · 品牌承诺</p>
+          <h2>三个坚持</h2>
+        </div>
+      </div>
+      <div class="values">
+        <div class="value reveal">
+          <!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M471.3 6.7C477.7 .6 487-1.6 495.6 1.2 505.4 4.5 512 13.7 512 24l0 186.9c0 131.2-108.1 237.1-238.8 237.1-77 0-143.4-49.5-167.5-118.7-35.4 30.8-57.7 76.1-57.7 126.7 0 13.3-10.7 24-24 24S0 469.3 0 456C0 381.1 38.2 315.1 96.1 276.3 131.4 252.7 173.5 240 216 240l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0c-39.7 0-77.3 8.8-111 24.5 23.3-70 89.2-120.5 167-120.5 66.4 0 115.8-22.1 148.7-44 19.2-12.8 35.5-28.1 50.7-45.3z"/></svg>
+          <h3>纯净配方</h3>
+          <p>全线产品不含 paraben 与矿物油，成分表干净透明，敏感肌可安心使用。</p>
+        </div>
+        <div class="value reveal">
+          <!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M116.7 33.8c4.5-6.1 11.7-9.8 19.3-9.8l240 0c7.6 0 14.8 3.6 19.3 9.8l112 152c6.8 9.2 6.1 21.9-1.5 30.4l-232 256c-4.5 5-11 7.9-17.8 7.9s-13.2-2.9-17.8-7.9l-232-256c-7.7-8.5-8.3-21.2-1.5-30.4l112-152zm38.5 39.8c-3.3 2.5-4.2 7-2.1 10.5L210.5 179.8 63.3 192c-4.1 .3-7.3 3.8-7.3 8s3.2 7.6 7.3 8l192 16c.4 0 .9 0 1.3 0l192-16c4.1-.3 7.3-3.8 7.3-8s-3.2-7.6-7.3-8l-147.2-12.3 57.4-95.6c2.1-3.5 1.2-8.1-2.1-10.5s-7.9-2-10.7 1L256 172.2 165.9 74.6c-2.8-3-7.4-3.4-10.7-1z"/></svg>
+          <h3>匠心工艺</h3>
+          <p>每一批次小批量灌装，经 28 天稳定性测试，以珠宝级标准对待每一瓶。</p>
+        </div>
+        <div class="value reveal">
+          <!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M152.3 60C198.5-20 314-20 360.2 60l37.3 64.6 27.7-16c8.4-4.9 18.9-4.2 26.6 1.7s11.1 15.9 8.6 25.3L436.9 223c-3.4 12.8-16.6 20.4-29.4 17l-87.4-23.4c-9.4-2.5-16.3-10.4-17.6-20s3.4-19.1 11.8-23.9l27.7-16-37.3-64.6c-21.6-37.3-75.4-37.3-97 0l-5.3 9.1c-8.8 15.3-28.4 20.5-43.7 11.7S138.2 84.5 147 69.1l5.3-9.1zM449.7 279.1c15.3-8.8 34.9-3.6 43.7 11.7l5.3 9.1c46.2 80-11.5 180-103.9 180l-74.6 0 0 32c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-64-64c-9.4-9.4-9.4-24.6 0-33.9l64-64c6.9-6.9 17.2-8.9 26.2-5.2s14.8 12.5 14.8 22.2l0 32 74.6 0c43.1 0 70.1-46.7 48.5-84l-5.3-9.1c-8.8-15.3-3.6-34.9 11.7-43.7zM51 235.4l-27.7-16c-8.4-4.9-13.1-14.3-11.8-23.9s8.2-17.5 17.6-20L116.5 152c12.8-3.4 26 4.2 29.4 17l23.4 87.4c2.5 9.4-.9 19.3-8.6 25.3s-18.2 6.6-26.6 1.7l-27.7-16-37.3 64.6c-21.6 37.3 5.4 84 48.5 84l10.6 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-10.6 0C25.3 480-32.4 380 13.8 300L51 235.4z"/></svg>
+          <h3>可持续包装</h3>
+          <p>玻璃瓶身可循环补充，外包装采用 FSC 认证纸材，减少一次性塑料。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 订阅 -->
+  <section class="section" id="journal" style="padding-top:0">
+    <div class="container">
+      <div class="news reveal">
+        <p class="eyebrow">Newsletter · 会员通讯</p>
+        <h2>加入 AURELLE 会员</h2>
+        <p>订阅获取新品发布、护肤仪式灵感与会员专享礼遇。首单即享 9 折与定制礼盒。</p>
+        <form id="news-form">
+          <input type="email" required placeholder="输入邮箱地址" aria-label="邮箱地址"/>
+          <button class="btn btn-filled" type="submit">订阅<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
+        </form>
+        <p class="msg" id="news-msg" role="status"></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#top" aria-label="AURELLE">
+          <span class="mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="AURELLE 品牌标记：字母 A 与顶生叶">
+<title>AURELLE 品牌标记：字母 A 与顶生叶</title>
+<!--
+标记 = 圆角三角 A + 横杠 + 顶端一片实叶；单色 #111，小尺寸可辨；用于导航与页脚。
+-->
+
+  <g id="s16-logo-mark" transform="translate(0 11)">
+    <polygon points="120,32 212,210 28,210" fill="none" stroke="#111111" stroke-width="15" stroke-linejoin="round"/>
+    <rect x="74" y="156" width="92" height="15" rx="4" fill="#111111"/>
+    <path d="M119,33 C127,9 151,-3 167,7 C157,31 133,45 119,33 Z" fill="#111111"/>
+  </g>
+</svg></span>
+          <span class="word">AURELLE</span>
+        </a>
+        <p class="fnote">独立高定护肤品牌。简约即奢华——Quietly distinctive. Endlessly versatile.</p>
+        <p class="fpay">VISA · MASTERCARD · AMEX · APPLE PAY · 支付宝 · 微信支付</p>
+      </div>
+      <div>
+        <h4>品牌</h4>
+        <ul>
+          <li><a href="#brand">品牌故事</a></li>
+          <li><a href="#manifesto">品牌宣言</a></li>
+          <li><a href="#values">我们的承诺</a></li>
+          <li><a href="#journal">会员通讯</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>服务</h4>
+        <ul>
+          <li><a href="#">配送与免邮</a></li>
+          <li><a href="#">退换政策</a></li>
+          <li><a href="#">常见问题</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关注我们</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+          <a href="#" aria-label="邮件"><!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></svg></a>
+        </div>
+        <h4 style="margin-top:24px">服务保障</h4>
+        <div class="pay">
+          <!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M0 96C0 60.7 28.7 32 64 32l288 0c35.3 0 64 28.7 64 64l0 32 50.7 0c17 0 33.3 6.7 45.3 18.7L557.3 192c12 12 18.7 28.3 18.7 45.3L576 384c0 35.3-28.7 64-64 64l-3.3 0c-10.4 36.9-44.4 64-84.7 64s-74.2-27.1-84.7-64l-102.6 0c-10.4 36.9-44.4 64-84.7 64s-74.2-27.1-84.7-64L64 448c-35.3 0-64-28.7-64-64L0 96zM512 288l0-50.7-45.3-45.3-50.7 0 0 96 96 0zM192 424a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm232 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg><!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M128 96l0 64 128 0 0-64c0-35.3-28.7-64-64-64s-64 28.7-64 64zM64 160l0-64C64 25.3 121.3-32 192-32S320 25.3 320 96l0 64c35.3 0 64 28.7 64 64l0 224c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 224c0-35.3 28.7-64 64-64z"/></svg><!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2026 AURELLE. 保留所有权利。</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 遮罩 -->
+<div class="overlay" id="overlay"></div>
+
+<!-- 菜单抽屉 -->
+<aside class="drawer" id="menu-drawer" aria-label="菜单">
+  <div class="drawer-head"><h3>菜单</h3><button class="iconbtn" id="menu-close" aria-label="关闭"><!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg></button></div>
+  <div class="drawer-body">
+    <ul class="menu-list">
+      <li><a href="#brand">品牌<small>The Brand</small></a></li>
+      <li><a href="#bestsellers">商店<small>Shop</small></a></li>
+      <li><a href="#series">精华系列<small>The Serum Edit</small></a></li>
+      <li><a href="#journal">日志<small>Journal</small></a></li>
+      <li><a href="#values">服务<small>Services</small></a></li>
+    </ul>
+  </div>
+</aside>
+
+<!-- 购物袋抽屉 -->
+<aside class="drawer right" id="cart-drawer" aria-label="购物袋">
+  <div class="drawer-head"><h3>购物袋</h3><button class="iconbtn" id="cart-close" aria-label="关闭"><!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg></button></div>
+  <div class="drawer-body" id="cart-body"></div>
+  <div class="drawer-foot">
+    <div class="subtotal"><span>小计</span><span id="cart-subtotal">¥0</span></div>
+    <button class="btn btn-filled" id="checkout-btn">结算<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
+    <p class="note">结算时运费与优惠将自动计算</p>
+  </div>
+</aside>
+
+<!-- 搜索浮层 -->
+<div class="searchpop" id="search-pop" role="search">
+  <div class="container">
+    <div class="row">
+      <!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      <input type="search" id="search-input" placeholder="搜索产品、成分或系列…" aria-label="搜索"/>
+      <button class="iconbtn" id="search-close" aria-label="关闭搜索"><!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg></button>
+    </div>
+    <div class="tags">
+      <span>精华</span><span>面霜</span><span>洁面</span><span>香水</span><span>唇釉</span><span>护理油</span><span>面膜</span>
+    </div>
+  </div>
+</div>
+
+<!-- 快速查看弹窗 -->
+<div class="modal" id="quickview" role="dialog" aria-modal="true">
+  <div class="modal-card">
+    <button class="modal-close" id="qv-close" aria-label="关闭"><!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg></button>
+    <div class="modal-art" id="qv-art"></div>
+    <div class="modal-info">
+      <p class="eyebrow" id="qv-eyebrow">AURELLE</p>
+      <p class="en" id="qv-en"></p>
+      <h2 id="qv-name"></h2>
+      <p class="price" id="qv-price"></p>
+      <p class="desc" id="qv-desc"></p>
+      <div class="meta" id="qv-meta"></div>
+      <div class="modal-buy">
+        <div class="stepper">
+          <button id="qv-dec" aria-label="减少数量"><!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32z"/></svg></button>
+          <span class="qty" id="qv-qty">1</span>
+          <button id="qv-inc" aria-label="增加数量"><!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+https://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->
+<svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M256 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 160-160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l160 0 0 160c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160 160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-160 0 0-160z"/></svg></button>
+        </div>
+        <button class="btn btn-filled" id="qv-add">加入购物袋</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>window.AU_ICONS = {  "arrow-right": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z\"/></svg>",
+  "bag-shopping": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M160 80c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 384c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48c0-61.9-50.1-112-112-112S112 18.1 112 80l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z\"/></svg>",
+  "bars": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z\"/></svg>",
+  "check": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z\"/></svg>",
+  "chevron-down": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z\"/></svg>",
+  "credit-card": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M0 128l0 32 512 0 0-32c0-35.3-28.7-64-64-64L64 64C28.7 64 0 92.7 0 128zm0 80L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-176-512 0zM64 360c0-13.3 10.7-24 24-24l48 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-48 0c-13.3 0-24-10.7-24-24zm144 0c0-13.3 10.7-24 24-24l64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0c-13.3 0-24-10.7-24-24z\"/></svg>",
+  "envelope": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z\"/></svg>",
+  "gem": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M116.7 33.8c4.5-6.1 11.7-9.8 19.3-9.8l240 0c7.6 0 14.8 3.6 19.3 9.8l112 152c6.8 9.2 6.1 21.9-1.5 30.4l-232 256c-4.5 5-11 7.9-17.8 7.9s-13.2-2.9-17.8-7.9l-232-256c-7.7-8.5-8.3-21.2-1.5-30.4l112-152zm38.5 39.8c-3.3 2.5-4.2 7-2.1 10.5L210.5 179.8 63.3 192c-4.1 .3-7.3 3.8-7.3 8s3.2 7.6 7.3 8l192 16c.4 0 .9 0 1.3 0l192-16c4.1-.3 7.3-3.8 7.3-8s-3.2-7.6-7.3-8l-147.2-12.3 57.4-95.6c2.1-3.5 1.2-8.1-2.1-10.5s-7.9-2-10.7 1L256 172.2 165.9 74.6c-2.8-3-7.4-3.4-10.7-1z\"/></svg>",
+  "instagram": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z\"/></svg>",
+  "leaf": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M471.3 6.7C477.7 .6 487-1.6 495.6 1.2 505.4 4.5 512 13.7 512 24l0 186.9c0 131.2-108.1 237.1-238.8 237.1-77 0-143.4-49.5-167.5-118.7-35.4 30.8-57.7 76.1-57.7 126.7 0 13.3-10.7 24-24 24S0 469.3 0 456C0 381.1 38.2 315.1 96.1 276.3 131.4 252.7 173.5 240 216 240l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0c-39.7 0-77.3 8.8-111 24.5 23.3-70 89.2-120.5 167-120.5 66.4 0 115.8-22.1 148.7-44 19.2-12.8 35.5-28.1 50.7-45.3z\"/></svg>",
+  "lock": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M128 96l0 64 128 0 0-64c0-35.3-28.7-64-64-64s-64 28.7-64 64zM64 160l0-64C64 25.3 121.3-32 192-32S320 25.3 320 96l0 64c35.3 0 64 28.7 64 64l0 224c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 224c0-35.3 28.7-64 64-64z\"/></svg>",
+  "magnifying-glass": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z\"/></svg>",
+  "minus": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32z\"/></svg>",
+  "plus": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M256 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 160-160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l160 0 0 160c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160 160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-160 0 0-160z\"/></svg>",
+  "recycle": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M152.3 60C198.5-20 314-20 360.2 60l37.3 64.6 27.7-16c8.4-4.9 18.9-4.2 26.6 1.7s11.1 15.9 8.6 25.3L436.9 223c-3.4 12.8-16.6 20.4-29.4 17l-87.4-23.4c-9.4-2.5-16.3-10.4-17.6-20s3.4-19.1 11.8-23.9l27.7-16-37.3-64.6c-21.6-37.3-75.4-37.3-97 0l-5.3 9.1c-8.8 15.3-28.4 20.5-43.7 11.7S138.2 84.5 147 69.1l5.3-9.1zM449.7 279.1c15.3-8.8 34.9-3.6 43.7 11.7l5.3 9.1c46.2 80-11.5 180-103.9 180l-74.6 0 0 32c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-64-64c-9.4-9.4-9.4-24.6 0-33.9l64-64c6.9-6.9 17.2-8.9 26.2-5.2s14.8 12.5 14.8 22.2l0 32 74.6 0c43.1 0 70.1-46.7 48.5-84l-5.3-9.1c-8.8-15.3-3.6-34.9 11.7-43.7zM51 235.4l-27.7-16c-8.4-4.9-13.1-14.3-11.8-23.9s8.2-17.5 17.6-20L116.5 152c12.8-3.4 26 4.2 29.4 17l23.4 87.4c2.5 9.4-.9 19.3-8.6 25.3s-18.2 6.6-26.6 1.7l-27.7-16-37.3 64.6c-21.6 37.3 5.4 84 48.5 84l10.6 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-10.6 0C25.3 480-32.4 380 13.8 300L51 235.4z\"/></svg>",
+  "truck": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 576 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M0 96C0 60.7 28.7 32 64 32l288 0c35.3 0 64 28.7 64 64l0 32 50.7 0c17 0 33.3 6.7 45.3 18.7L557.3 192c12 12 18.7 28.3 18.7 45.3L576 384c0 35.3-28.7 64-64 64l-3.3 0c-10.4 36.9-44.4 64-84.7 64s-74.2-27.1-84.7-64l-102.6 0c-10.4 36.9-44.4 64-84.7 64s-74.2-27.1-84.7-64L64 448c-35.3 0-64-28.7-64-64L0 96zM512 288l0-50.7-45.3-45.3-50.7 0 0 96 96 0zM192 424a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm232 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80z\"/></svg>",
+  "user": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z\"/></svg>",
+  "xmark": "<!-- Font Awesome Free 7.3.1 - Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License\nhttps://fontawesome.com/license/free - 由 gen/extract-icons.py 提取，勿手改 -->\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill=\"currentColor\" d=\"M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z\"/></svg>"};</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -12,6 +12,8 @@ Curated front-end and mobile templates for StepFun Studio workspace gallery and 
 | `atelier` | Sites | Editorial portfolio |
 | `stepfun-3d` | Creative | 3D digital pavilion |
 | `step-studio` | Sites | Brand & digital design studio ([demo notes](./sites/step-studio/README.md)) |
+| `meridian-ops` | Tools | Global operations dashboard ([template notes](./sites/meridian-ops/README.md)) |
+| `aurelle` | Sites | Beauty brand storefront ([template notes](./sites/aurelle/README.md)) |
 
 Paths: `sites/<id>/` with `index.html` entry.
 
