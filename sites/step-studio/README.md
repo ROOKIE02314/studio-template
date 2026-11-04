@@ -35,8 +35,8 @@ step-studio/
 
 本模板遵循[仓库统一的预览素材约束](../../README.md#gallery-preview-assets)，同时保存两个独立文件：
 
-- [preview/cover.png](./preview/cover.png)：PNG 封面，1280 × 645，取自本次用户提供录像的第 3 秒帧，用于默认展示、加载期间及视频播放失败时回退。
-- [preview/video.mp4](./preview/video.mp4)：本次用户提供的 Step Studio 实录，转为 H.264 MP4，1280 × 646、30 fps、约 23.33 秒、4.84 MiB、无音轨，已启用 faststart。画幅与封面仅有转码偶数尺寸取整差异，不拉伸内容。
+- [preview/cover.png](./preview/cover.png)：用户提供的独立 PNG 封面，2560 × 1318、约 1.08 MiB，原样保留，用于默认展示、加载期间及视频播放失败时回退。
+- [preview/video.mp4](./preview/video.mp4)：本次用户提供的 Step Studio 实录，转为 H.264 MP4，1280 × 646、30 fps、约 23.33 秒、4.84 MiB、无音轨，已启用 faststart。封面为独立截图，与录制视频的画幅尺寸不同；两份素材均保留自身比例，不拉伸原始内容。
 
 Studio 模板卡片 hover/键盘聚焦、选中后的输入框预览及详情弹窗使用同一视频，静音循环并内联播放。这里的素材是 Studio 模板展示用录制内容，不需要加入网站页面，也不是网站自身的交互功能。
 
