@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "scenes": [
+    {
+      "id": "games",
+      "title": {
+        "zh": "游戏",
+        "en": "Games"
+      }
+    },
+    {
+      "id": "marketing",
+      "title": {
+        "zh": "营销",
+        "en": "Marketing"
+      }
+    },
+    {
+      "id": "tools",
+      "title": {
+        "zh": "工具",
+        "en": "Tools"
+      }
+    },
+    {
+      "id": "sites",
+      "title": {
+        "zh": "网站",
+        "en": "Sites"
+      }
+    },
+    {
+      "id": "creative",
+      "title": {
+        "zh": "创意",
+        "en": "Creative"
+      }
+    },
+    {
+      "id": "app",
+      "title": {
+        "zh": "App",
+        "en": "App"
+      }
+    }
+  ],
+  "templates": [
+    {
+      "id": "space-dash",
+      "scene": "games",
+      "title": {
+        "zh": "霓虹跑酷",
+        "en": "Neon dash"
+      },
+      "description": {
+        "zh": "Three.js 霓虹跑酷：变道、跳跃、收集小黄鸭，躲开追击的狐狸。",
+        "en": "A Three.js neon runner — switch lanes, jump, collect ducks, and outrun the fox."
+      },
+      "dir": "sites/space-dash",
+      "tone": "lilac",
+      "cover": "sites/space-dash/preview/cover.png",
+      "coverHover": "sites/space-dash/preview/hover.gif",
+      "previewUrl": "https://clear-river-330e.page.stepcloud.com/"
+    },
+    {
+      "id": "plane-war",
+      "scene": "games",
+      "title": {
+        "zh": "天际突袭",
+        "en": "Sky strike 3D"
+      },
+      "description": {
+        "zh": "Three.js 3D 空战：锁定导弹、波次敌机与 StepFun TTS 中文语音，零构建静态站点。",
+        "en": "Three.js 3D air combat — lock-on missiles, waves of enemies, and StepFun TTS voice lines; zero-build static site."
+      },
+      "dir": "sites/plane-war",
+      "tone": "sea",
+      "cover": "sites/plane-war/preview/cover.png",
+      "coverHover": "sites/plane-war/preview/hover.gif",
+      "previewUrl": "https://swift-otter-3b5f.page.stepcloud.com/"
+    },
+    {
+      "id": "aurora-launch",
+      "scene": "marketing",
+      "title": {
+        "zh": "极光发布",
+        "en": "Aurora launch"
+      },
+      "description": {
+        "zh": "Apple 风格的深色产品发布页：大标题、设备展示与预约表单。",
+        "en": "An Apple-style dark launch page with hero type, device frame, and signup form."
+      },
+      "dir": "sites/aurora-launch",
+      "tone": "ink",
+      "cover": "sites/aurora-launch/preview/cover.png"
+    },
+    {
+      "id": "prism-studio",
+      "scene": "tools",
+      "title": {
+        "zh": "棱镜工作台",
+        "en": "Prism studio"
+      },
+      "description": {
+        "zh": "Google Material 风格的静态数据看板：指标卡、图表与项目列表。",
+        "en": "A Material-inspired static dashboard with metrics, charts, and project rows."
+      },
+      "dir": "sites/prism-studio",
+      "tone": "sea",
+      "cover": "sites/prism-studio/preview/cover.png"
+    },
+    {
+      "id": "atelier",
+      "scene": "sites",
+      "title": {
+        "zh": "Atelier 工作室",
+        "en": "Atelier"
+      },
+      "description": {
+        "zh": "编辑式作品集站点：大字号排版、案例网格与引言区块。",
+        "en": "An editorial portfolio with display type, case grid, and quote section."
+      },
+      "dir": "sites/atelier",
+      "tone": "sand",
+      "cover": "sites/atelier/preview/cover.png"
+    },
+    {
+      "id": "stepfun-3d",
+      "scene": "creative",
+      "title": {
+        "zh": "星海藏馆",
+        "en": "Starlit pavilion"
+      },
+      "description": {
+        "zh": "阶跃星辰 3D 数字藏馆：三件 glTF 藏品悬浮于星海中，可拖动旋转凝视。",
+        "en": "StepFun 3D pavilion — three glTF artifacts in a starfield you can orbit and inspect."
+      },
+      "dir": "sites/stepfun-3d",
+      "tone": "night",
+      "cover": "sites/stepfun-3d/preview/cover.png",
+      "coverHover": "sites/stepfun-3d/preview/hover.gif",
+      "previewUrl": "https://kind-meadow-fcff.page.stepcloud.com/"
+    },
+    {
+      "id": "step-studio",
+      "scene": "sites",
+      "title": {
+        "zh": "Step Studio 工作室",
+        "en": "Step Studio"
+      },
+      "description": {
+        "zh": "品牌与数字体验设计工作室的静态主站：成果展示、深浅主题、点阵字标与 SVG 交互动效。",
+        "en": "A static brand and digital design studio website with a project showcase, light/dark themes, a dot-matrix wordmark, and interactive SVG animations."
+      },
+      "dir": "sites/step-studio",
+      "tone": "ink",
+      "cover": "sites/step-studio/preview/cover.png",
+      "previewVideo": "sites/step-studio/preview/video.mp4"
+    },
+    {
+      "id": "pocket-planet",
+      "scene": "app",
+      "title": {
+        "zh": "口袋星球探险",
+        "en": "Pocket planet explorer"
+      },
+      "description": {
+        "zh": "把手机变成星球探测器：相机取景、倾斜操控、定位探索与震动反馈。H5 + 原生桥接，产出 Android APK，扫码下载；iPhone 安装需另行签名或 TestFlight。",
+        "en": "Turn your phone into a planet scanner with camera, tilt controls, location exploration, and haptics. H5 + native bridges produce an Android APK for QR download; iPhone installation requires signing or TestFlight."
+      },
+      "dir": "apps/pocket-planet",
+      "tone": "night",
+      "cover": "apps/pocket-planet/preview/cover.svg"
+    }
+  ]
+}
