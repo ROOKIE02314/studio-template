@@ -2,6 +2,37 @@
 
 Curated front-end and mobile templates for StepFun Studio workspace gallery and agent init flows.
 
+## Catalog: source of truth
+
+The root [catalog.json](./catalog.json) owns all gallery content: scene/category IDs and localized titles, template IDs, localized titles and descriptions, ordering, source directories, tones, preview-media paths, and optional live-demo URLs. The `scenes` and `templates` arrays define display order; readers must preserve that order. The tables below are documentation, not a second catalog.
+
+The exact schema is:
+
+```ts
+{
+  schemaVersion: 1,
+  scenes: Array<{ id: string; title: { zh: string; en: string } }>,
+  templates: Array<{
+    id: string;
+    scene: string;
+    title: { zh: string; en: string };
+    description?: { zh: string; en: string };
+    dir: string;
+    tone: 'forest' | 'sand' | 'night' | 'ink' | 'lilac' | 'sea';
+    cover?: string;
+    coverHover?: string;
+    previewVideo?: string;
+    previewUrl?: string;
+  }>
+}
+```
+
+- Scene and template IDs must be unique, and each template's `scene` must reference a listed scene.
+- `dir`, `cover`, `coverHover`, and `previewVideo` are repository-root-relative POSIX paths, with no leading slash, traversal, local filesystem paths, or URLs. Media lives in the respective template's `preview/` directory; `previewUrl`, when present, is a public HTTPS live-demo URL, not a local preview URL.
+- Entries contain no `repo` or `ref`. Studio's server supplies one fixed repository and one selected **published, merged, immutable commit** for the catalog, template source, and preview media together. Readers resolve every relative path against that same commit; do not combine source from one revision with media from another.
+- Studio owns only loading, rendering, playback, and selection; this repository owns the catalog, content, and media. There is no manual copying to Studio's public assets and no separate Studio-maintained title/category/order list. Studio's generic placeholder remains a renderer fallback, not template-owned media.
+- A template PR or branch change does **not** automatically roll out to Studio. After merge and publication, update only Studio's configured template version to the selected fixed commit, then validate the gallery. Do not read preview/catalog data from an open PR branch or follow a moving `main`/release tag at runtime.
+
 ## Sites
 
 | ID | Scene | Notes |
@@ -19,14 +50,14 @@ Paths: `sites/<id>/` with `index.html` entry.
 
 - `pocket-planet` — original Pocket Planet Explorer: camera field notes, optional tilt rover controls, coordinate-inspired exploration, and native haptic feedback. Path: `apps/pocket-planet/`.
 - Read [the mobile README](./apps/pocket-planet/README.md) first: pinned pnpm install, Android JDK/SDK bootstrap (explicit license review), validation, and signed-debug APK build. Primary artifact: `apps/pocket-planet/artifacts/pocket-planet.apk`; this is an Android app template, not a website publishing flow.
-- New mobile catalog entries use Git ref `main` until a release tag includes their files. The existing `v1` tag does not contain this template.
+- Template source and gallery media use the same published fixed commit configured by Studio; see the [catalog contract](#catalog-source-of-truth).
 - Browser preview is a local, accessible fallback demo, not proof of native device support. APKs cannot install on iOS; iOS requires its own signing/distribution setup.
 
 ## Gallery preview assets
 
 Starting with `step-studio`, **every new template and every gallery-material refresh must include both a static cover and a recorded preview video**. Existing templates are grandfathered until their next gallery-material refresh; do not fabricate recordings for them.
 
-Use the same fixed filenames for website and mobile templates; no extra manifest or configurable filename is required:
+Use the same fixed filenames for website and mobile templates, declared as repository-root-relative paths in [catalog.json](./catalog.json):
 
 ```text
 sites/<id>/preview/cover.png
@@ -39,6 +70,8 @@ apps/<id>/preview/video.mp4
 | --- | --- | --- |
 | `preview/cover.png` | A real PNG image, stored separately from the video | Default gallery cover, loading poster, and playback-failure fallback |
 | `preview/video.mp4` | MP4 containing H.264 video, no audio track, with the `moov` atom before `mdat` (faststart) | Muted, looping, inline playback on gallery hover/focus, in the selected composer preview, and in the detail preview |
+
+Legacy material is grandfathered: `pocket-planet` retains [preview/cover.svg](./apps/pocket-planet/preview/cover.svg), and `space-dash`, `plane-war`, and `stepfun-3d` retain `preview/hover.gif` via `coverHover`. Other legacy templates retain PNG covers without a video. These files preserve the existing gallery bytes; do not fabricate new videos for legacy entries. A new template or gallery-material refresh must use the PNG/MP4 pair above, with `previewVideo` preferred over legacy `coverHover`.
 
 ### Material requirements
 
@@ -53,9 +86,9 @@ apps/<id>/preview/video.mp4
 - [ ] Both `preview/cover.png` and `preview/video.mp4` exist and can be decoded; verify video playback and seeking in a browser, not just the extension.
 - [ ] The video has no audio, supports faststart, and can loop; the separate cover matches its content and aspect ratio.
 - [ ] Material matches the submitted template version; rights/credits and the template README are up to date.
-- [ ] Use this repository as the source of truth. For Studio's current static-asset deployment, copy `preview/cover.png` to `public/workspace-templates/covers/<id>.png` and `preview/video.mp4` to `public/workspace-templates/videos/<id>.mp4` in the Studio app, preserving the bytes.
-- [ ] Set the Studio catalog's `cover` to `/workspace-templates/covers/<id>.png` and `previewVideo` to `/workspace-templates/videos/<id>.mp4`. Do not use `coverHover`/GIF for a new recorded preview.
-- [ ] After the template change is merged, pin the Studio catalog to a commit or release tag that includes the template and both preview files; do not reuse a release tag that predates them. This repository does not automatically sync assets or publish the Studio catalog.
+- [ ] Update the root [catalog.json](./catalog.json) in the same change: scene, localized titles/descriptions, array order, `dir`, `tone`, and repository-root-relative `cover` / `previewVideo` paths. Do not use `coverHover`/GIF for a new recorded preview.
+- [ ] Validate the schema and confirm every catalog source/media path exists. Do not copy gallery assets into Studio's public directory or duplicate catalog metadata in Studio.
+- [ ] After the template change is merged and published, update only Studio's configured version to the fixed commit containing the catalog, template, and media together. No open PR branch data or moving ref is an automatic rollout.
 - [ ] Verify idle cover, hover/focus playback, selected-composer playback, and static-cover fallback when video loading fails.
 
 Reference implementation: [Step Studio preview notes](./sites/step-studio/README.md#studio-模板预览素材).

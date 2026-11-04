@@ -40,7 +40,7 @@ step-studio/
 
 Studio 模板卡片 hover/键盘聚焦、选中后的输入框预览及详情弹窗使用同一视频，静音循环并内联播放。这里的素材是 Studio 模板展示用录制内容，不需要加入网站页面，也不是网站自身的交互功能。
 
-后续更新本模板展示内容时，必须同步更新封面和视频，保留 `preview/cover.png` 与 `preview/video.mp4` 的固定路径；这两个文件与模板代码一起版本管理。当前 Studio 使用复制到 public 目录的静态素材，仓库文件不会自动同步或自动上架，接入时需按根 README 清单更新素材与模板版本。
+后续更新本模板展示内容时，必须同步更新封面和视频，保留 `preview/cover.png` 与 `preview/video.mp4` 的固定路径；这两个文件与模板代码一起版本管理。仓库根 [catalog.json](../../catalog.json) 是标题、分类、排序和素材路径的唯一来源，本模板声明的仓库根相对路径为 `sites/step-studio/preview/cover.png` 与 `sites/step-studio/preview/video.mp4`。Studio 只负责加载、渲染、播放和选择，不再手动复制素材到 public 目录，也不单独维护内容元数据。变更合并发布后，只更新 Studio 配置的固定 commit；目录清单、源码和素材必须来自同一个已发布、已合并的 commit。PR 分支数据不会自动上架，详见[根 README 的目录契约](../../README.md#catalog-source-of-truth)。
 
 ## 功能与使用边界
 
