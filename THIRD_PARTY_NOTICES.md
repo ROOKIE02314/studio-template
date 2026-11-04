@@ -10,5 +10,6 @@ Curated **StepFun Studio** front-end demos. No third-party template bundles exce
 | `atelier` | Editorial portfolio / studio site | StepFun Studio |
 | `stepfun-3d` | StepFun digital pavilion (3D gallery) | StepFun demo; Three.js MIT |
 | `plane-war` | SKY STRIKE 3D browser air-combat (Three.js) | StepFun demo; Three.js MIT; fighter glTF models CC BY 4.0 (see `sites/plane-war/CREDITS.txt`); StepFun TTS voice lines |
+| `step-studio` | Step Studio brand & digital design studio | Code license not specified; preserve page attribution (see [template notes](./sites/step-studio/README.md)); Google Fonts: Noto Serif SC, Noto Sans SC and PT Mono, SIL OFL 1.1 |
 
 Refresh curated demos manually; `scripts/import-vendors.sh` is deprecated for OSS bulk import.

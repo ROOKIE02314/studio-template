@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Step Studio — 品牌与数字体验设计工作室</title>
+<meta name="description" content="Step Studio 是一间独立的品牌与数字体验设计工作室。成立于 2019 年，上海。本页展示工作室成果。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500&family=PT+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tokens.css">
+<link rel="stylesheet" href="assets/studio.css">
+<link rel="icon" type="image/svg+xml" href="assets/svg/mark.svg">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="Step Studio 首页">
+      <span class="brand-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Step Studio 标识">
+  <title>Step Studio mark</title>
+  <!-- 工作室标识：圆角方 + 三级上升台阶 + 顶点；currentColor 继承文字色 -->
+  <rect x="2.5" y="2.5" width="27" height="27" rx="7" fill="none" stroke="currentColor" stroke-width="2"/>
+  <rect x="8.5" y="17" width="5" height="6.5" fill="currentColor"/>
+  <rect x="13.5" y="13" width="5" height="10.5" fill="currentColor"/>
+  <rect x="18.5" y="9" width="5" height="14.5" fill="currentColor"/>
+  <circle cx="21" cy="7.2" r="2.2" fill="currentColor"/>
+</svg></span>
+      <span class="brand-name">STEP&nbsp;STUDIO</span>
+      <span class="brand-sub sf-label">Brand &amp; Digital · Shanghai</span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="#work" data-spy="work">Work</a>
+      <a href="#studio" data-spy="studio">Studio</a>
+      <a href="#services" data-spy="services">Services</a>
+      <a href="#contact" data-spy="contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换深浅主题">
+      <span class="theme-toggle-dot" aria-hidden="true"></span>
+      <span class="theme-toggle-label" id="themeToggleLabel">DARK</span>
+    </button>
+  </div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+</header>
+
+<main id="main">
+<a id="top"></a>
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="工作室介绍">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="hero-kicker sf-label reveal">Step Studio — Independent Design Practice</p>
+      <div class="hero-dm" id="heroDotmatrix" aria-hidden="true">
+        <span class="hero-dm-fallback">STEP STUDIO</span>
+      </div>
+      <h1 class="hero-title reveal">品牌与数字体验<br>设计工作室</h1>
+      <p class="hero-lede reveal">我们相信好的设计是一次次具体的推进。八年来，Step Studio 与 46 个客户合作完成了 128 个项目——从一套标志、一个产品界面，到一场展览的完整视觉。</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#work" data-magnetic>查看成果<span class="btn-arrow" aria-hidden="true">↓</span></a>
+        <a class="btn btn-ghost" href="#contact" data-magnetic>联系我们<span class="btn-arrow" aria-hidden="true">↗</span></a>
+      </div>
+      <dl class="hero-meta reveal sf-label">
+        <div><dt>EST.</dt><dd>2019</dd></div>
+        <div><dt>BASE</dt><dd>上海 · 静安</dd></div>
+        <div><dt>TEAM</dt><dd>6 人</dd></div>
+      </dl>
+    </div>
+    <figure class="hero-art reveal">
+      <div class="hero-art-frame"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="上升台阶主视觉插画">
+  <title>Step · 上升台阶主视觉</title>
+  <!-- Brief: 主体=五级上升台阶（每级一颗蓝点=稀疏激活母题）+ 点阵网格背景；情绪=持续迭代向上；风格=网格精确×纸感扁平；viewBox 1200x900；透明底直接置于页面纸底 -->
+  <g id="far">
+    <circle cx="985" cy="175" r="170" fill="#D8E2EC" opacity="0.6"/>
+    <circle cx="235" cy="150" r="88" fill="#F3EBE1" opacity="0.85"/>
+  </g>
+  <g id="mid" fill="#B6B6B6" opacity="0.32">
+    <circle cx="60" cy="60" r="3.5"/><circle cx="180" cy="60" r="3.5"/><circle cx="300" cy="60" r="3.5"/><circle cx="420" cy="60" r="3.5"/><circle cx="540" cy="60" r="3.5"/><circle cx="660" cy="60" r="3.5"/><circle cx="780" cy="60" r="3.5"/><circle cx="900" cy="60" r="3.5"/><circle cx="1020" cy="60" r="3.5"/><circle cx="1140" cy="60" r="3.5"/>
+    <circle cx="60" cy="180" r="3.5"/><circle cx="180" cy="180" r="3.5"/><circle cx="300" cy="180" r="3.5"/><circle cx="420" cy="180" r="3.5"/><circle cx="540" cy="180" r="3.5"/><circle cx="660" cy="180" r="3.5"/><circle cx="780" cy="180" r="3.5"/><circle cx="900" cy="180" r="3.5"/><circle cx="1020" cy="180" r="3.5"/><circle cx="1140" cy="180" r="3.5"/>
+    <circle cx="60" cy="300" r="3.5"/><circle cx="180" cy="300" r="3.5"/><circle cx="300" cy="300" r="3.5"/><circle cx="420" cy="300" r="3.5"/><circle cx="540" cy="300" r="3.5"/><circle cx="660" cy="300" r="3.5"/><circle cx="780" cy="300" r="3.5"/><circle cx="900" cy="300" r="3.5"/><circle cx="1020" cy="300" r="3.5"/><circle cx="1140" cy="300" r="3.5"/>
+    <circle cx="60" cy="420" r="3.5"/><circle cx="180" cy="420" r="3.5"/><circle cx="300" cy="420" r="3.5"/><circle cx="420" cy="420" r="3.5"/><circle cx="540" cy="420" r="3.5"/><circle cx="660" cy="420" r="3.5"/><circle cx="780" cy="420" r="3.5"/><circle cx="900" cy="420" r="3.5"/><circle cx="1020" cy="420" r="3.5"/><circle cx="1140" cy="420" r="3.5"/>
+    <circle cx="60" cy="540" r="3.5"/><circle cx="180" cy="540" r="3.5"/><circle cx="300" cy="540" r="3.5"/><circle cx="420" cy="540" r="3.5"/><circle cx="540" cy="540" r="3.5"/><circle cx="660" cy="540" r="3.5"/><circle cx="780" cy="540" r="3.5"/><circle cx="900" cy="540" r="3.5"/><circle cx="1020" cy="540" r="3.5"/><circle cx="1140" cy="540" r="3.5"/>
+    <circle cx="60" cy="660" r="3.5"/><circle cx="180" cy="660" r="3.5"/><circle cx="300" cy="660" r="3.5"/><circle cx="420" cy="660" r="3.5"/><circle cx="540" cy="660" r="3.5"/><circle cx="660" cy="660" r="3.5"/><circle cx="780" cy="660" r="3.5"/><circle cx="900" cy="660" r="3.5"/><circle cx="1020" cy="660" r="3.5"/><circle cx="1140" cy="660" r="3.5"/>
+    <circle cx="60" cy="780" r="3.5"/><circle cx="180" cy="780" r="3.5"/><circle cx="300" cy="780" r="3.5"/><circle cx="420" cy="780" r="3.5"/><circle cx="540" cy="780" r="3.5"/><circle cx="660" cy="780" r="3.5"/><circle cx="780" cy="780" r="3.5"/><circle cx="900" cy="780" r="3.5"/><circle cx="1020" cy="780" r="3.5"/><circle cx="1140" cy="780" r="3.5"/>
+  </g>
+  <g id="subject" fill="#1A1A1A">
+    <rect x="160" y="540" width="150" height="80"/>
+    <rect x="310" y="460" width="150" height="160"/>
+    <rect x="460" y="380" width="150" height="240"/>
+    <rect x="610" y="300" width="150" height="320"/>
+    <rect x="760" y="220" width="150" height="400"/>
+    <g fill="#FFFFFF" opacity="0.12">
+      <rect x="160" y="540" width="4" height="80"/><rect x="310" y="460" width="4" height="160"/><rect x="460" y="380" width="4" height="240"/><rect x="610" y="300" width="4" height="320"/><rect x="760" y="220" width="4" height="400"/>
+    </g>
+    <g fill="#000000" opacity="0.12">
+      <ellipse cx="235" cy="628" rx="86" ry="8"/><ellipse cx="385" cy="628" rx="86" ry="8"/><ellipse cx="535" cy="628" rx="86" ry="8"/><ellipse cx="685" cy="628" rx="86" ry="8"/><ellipse cx="835" cy="628" rx="86" ry="8"/>
+    </g>
+  </g>
+  <g id="foreground">
+    <rect x="60" y="620" width="1080" height="2" fill="#B6B6B6"/>
+    <line x1="835" y1="160" x2="835" y2="204" stroke="#1A1A1A" stroke-width="2"/>
+    <rect x="827" y="204" width="16" height="16" fill="#F9B845"/>
+    <g fill="#00A9FF">
+      <circle class="pl pl-hs-1" cx="235" cy="530" r="10"/>
+      <circle class="pl pl-hs-2" cx="385" cy="450" r="10"/>
+      <circle class="pl pl-hs-3" cx="535" cy="370" r="10"/>
+      <circle class="pl pl-hs-4" cx="685" cy="290" r="10"/>
+      <circle class="pl pl-hs-5" cx="835" cy="206" r="14"/>
+    </g>
+  </g>
+</svg></div>
+      <figcaption class="sf-caption">FIG.00 — 上升台阶 / 工作室主视觉（SVG 占位）</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>品牌识别 <i>✳</i> 数字产品 <i>✳</i> 动态设计 <i>✳</i> 出版策展 <i>✳</i> 空间导视 <i>✳</i> 包装系统 <i>✳</i> </span>
+    <span>品牌识别 <i>✳</i> 数字产品 <i>✳</i> 动态设计 <i>✳</i> 出版策展 <i>✳</i> 空间导视 <i>✳</i> 包装系统 <i>✳</i> </span>
+  </div>
+</div>
+
+<!-- ============ WORK ============ -->
+<section class="section" id="work" aria-labelledby="work-title">
+  <header class="section-head">
+    <p class="section-index sf-label">01 / WORK</p>
+    <h2 class="section-title" id="work-title">成果</h2>
+    <p class="section-sub sf-subtitle">Selected Work · 2019–2026</p>
+    <p class="section-note sf-caption">以下图片均为 SVG 占位插画，正式项目图将在确认后替换。</p>
+  </header>
+
+  <div class="work-grid">
+    <article class="work-card reveal" style="--i:0">
+      <a class="work-link" href="#contact" aria-label="潮汐音乐 品牌识别系统，2025">
+        <span class="art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="品牌识别海报占位插画">
+  <title>品牌识别系统 · 占位插画</title>
+  <!-- Brief: 主体=墨色圆盘海报 + 5 颗稀疏蓝点（品牌点阵母题）；场景=品牌样张墙；情绪=克制精确；风格=网格精确×纸感扁平；viewBox 800x600；光源左上 -->
+  <defs>
+    <clipPath id="w1-disk"><circle cx="320" cy="300" r="172"/></clipPath>
+  </defs>
+  <g id="background"><rect width="800" height="600" fill="#F3EBE1"/></g>
+  <g id="far"><circle cx="648" cy="132" r="150" fill="#D8E2EC" opacity="0.55"/></g>
+  <g id="mid"><ellipse cx="322" cy="476" rx="198" ry="15" fill="#000000" opacity="0.12"/></g>
+  <g id="subject">
+    <circle cx="320" cy="300" r="172" fill="#1A1A1A"/>
+    <g clip-path="url(#w1-disk)">
+      <circle cx="354" cy="334" r="178" fill="#000000" opacity="0.22"/>
+      <circle cx="250" cy="222" r="62" fill="#FFFFFF" opacity="0.10"/>
+      <circle cx="320" cy="300" r="122" fill="none" stroke="#F7F7F7" stroke-width="1" opacity="0.4"/>
+    </g>
+    <g fill="#00A9FF">
+      <circle class="pl pl-w1-d1" cx="268" cy="238" r="11"/>
+      <circle class="pl pl-w1-d2" cx="352" cy="258" r="11"/>
+      <circle class="pl pl-w1-d3" cx="300" cy="316" r="11"/>
+      <circle class="pl pl-w1-d4" cx="372" cy="352" r="11"/>
+      <circle class="pl pl-w1-d5" cx="258" cy="366" r="11"/>
+    </g>
+  </g>
+  <g id="foreground">
+    <rect x="560" y="252" width="176" height="10" fill="#1A1A1A"/>
+    <rect x="560" y="288" width="176" height="6" fill="#1A1A1A" opacity="0.62"/>
+    <rect x="560" y="312" width="120" height="6" fill="#1A1A1A" opacity="0.62"/>
+    <rect x="560" y="348" width="176" height="2" fill="#B6B6B6"/>
+    <rect x="560" y="362" width="88" height="2" fill="#B6B6B6"/>
+    <rect x="576" y="404" width="14" height="14" fill="#F9B845"/>
+  </g>
+  <g id="details" fill="#656565">
+    <circle cx="96" cy="96" r="3.5"/><circle cx="116" cy="96" r="3.5"/><circle cx="136" cy="96" r="3.5"/><circle cx="156" cy="96" r="3.5"/><circle cx="176" cy="96" r="3.5"/>
+  </g>
+</svg></span>
+        <span class="work-meta">
+          <span class="work-index sf-label">01</span>
+          <span class="work-name">潮汐音乐 · 品牌识别系统</span>
+          <span class="work-year sf-label">2025</span>
+        </span>
+        <span class="work-desc sf-caption">为独立音乐厂牌建立从标志、字体到物料的全套识别</span>
+        <span class="work-tags"><i>BRAND</i><i>IDENTITY</i></span>
+        <span class="work-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="work-card reveal" style="--i:1">
+      <a class="work-link" href="#contact" aria-label="城市观测站 碳排放数据看板，2025">
+        <span class="art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="数据看板占位插画">
+  <title>数据可视化看板 · 占位插画</title>
+  <!-- Brief: 主体=白色数据面板（柱状图+折线）；场景=冷色数据面板；情绪=理性可读；风格=网格精确×纸感扁平；viewBox 800x600 -->
+  <g id="background"><rect width="800" height="600" fill="#D8E2EC"/></g>
+  <g id="mid"><rect x="88" y="76" width="624" height="448" rx="8" fill="#FFFFFF" stroke="#B6B6B6" stroke-width="1"/></g>
+  <g id="subject">
+    <rect x="88" y="132" width="624" height="1" fill="#B6B6B6"/>
+    <rect x="112" y="100" width="10" height="10" fill="#1A1A1A"/>
+    <rect x="140" y="100" width="10" height="10" fill="#656565"/>
+    <rect x="168" y="100" width="10" height="10" fill="#00A9FF"/>
+    <rect x="192" y="103" width="56" height="5" fill="#B6B6B6"/>
+    <rect x="560" y="100" width="128" height="8" fill="#1A1A1A"/>
+    <rect x="560" y="116" width="80" height="5" fill="#B6B6B6"/>
+    <g fill="#B6B6B6" opacity="0.5">
+      <rect x="120" y="372" width="560" height="1"/>
+      <rect x="120" y="292" width="560" height="1"/>
+      <rect x="120" y="212" width="560" height="1"/>
+    </g>
+    <g>
+      <rect class="pl pl-w2-b1" x="150" y="342" width="56" height="110" fill="#1A1A1A"/>
+      <rect class="pl pl-w2-b2" x="262" y="282" width="56" height="170" fill="#1A1A1A"/>
+      <rect class="pl pl-w2-b3" x="374" y="202" width="56" height="250" fill="#1A1A1A"/>
+      <rect class="pl pl-w2-b4" x="486" y="312" width="56" height="140" fill="#1A1A1A"/>
+      <rect class="pl pl-w2-b5" x="598" y="162" width="56" height="290" fill="#00A9FF"/>
+      <rect x="598" y="162" width="56" height="6" fill="#FFFFFF" opacity="0.35"/>
+    </g>
+    <polyline class="pl pl-w2-line" points="178,392 290,330 402,255 514,300 626,212" fill="none" stroke="#656565" stroke-width="1.5"/>
+    <g fill="#1A1A1A">
+      <circle cx="178" cy="392" r="4.5"/><circle cx="290" cy="330" r="4.5"/><circle cx="402" cy="255" r="4.5"/><circle cx="514" cy="300" r="4.5"/>
+    </g>
+    <circle class="pl pl-w2-node" cx="626" cy="212" r="7" fill="#00A9FF"/>
+    <rect x="120" y="452" width="560" height="1.5" fill="#1A1A1A"/>
+    <g fill="#1A1A1A">
+      <rect x="177" y="458" width="2" height="6"/><rect x="289" y="458" width="2" height="6"/><rect x="401" y="458" width="2" height="6"/><rect x="513" y="458" width="2" height="6"/><rect x="625" y="458" width="2" height="6"/>
+    </g>
+  </g>
+  <g id="foreground">
+    <rect x="88" y="504" width="624" height="1" fill="#B6B6B6"/>
+    <rect x="120" y="472" width="120" height="8" fill="#1A1A1A"/>
+    <rect x="120" y="488" width="72" height="5" fill="#B6B6B6"/>
+    <rect x="352" y="472" width="120" height="8" fill="#1A1A1A"/>
+    <rect x="352" y="488" width="72" height="5" fill="#B6B6B6"/>
+    <rect x="584" y="472" width="96" height="8" fill="#1A1A1A"/>
+    <rect x="584" y="488" width="60" height="5" fill="#B6B6B6"/>
+  </g>
+</svg></span>
+        <span class="work-meta">
+          <span class="work-index sf-label">02</span>
+          <span class="work-name">城市观测站 · 数据看板</span>
+          <span class="work-year sf-label">2025</span>
+        </span>
+        <span class="work-desc sf-caption">城市碳排放监测平台的可视化系统与图表规范</span>
+        <span class="work-tags"><i>DATA</i><i>DASHBOARD</i></span>
+        <span class="work-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="work-card reveal" style="--i:2">
+      <a class="work-link" href="#contact" aria-label="纸岛 阅读应用产品设计，2024">
+        <span class="art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="移动应用界面占位插画">
+  <title>移动应用产品设计 · 占位插画</title>
+  <!-- Brief: 主体=手机（墨色机身+浅色屏）；场景= mist 冷底上的产品照；情绪=轻快可信；风格=网格精确×纸感扁平；viewBox 800x600；光源左上 -->
+  <g id="background"><rect width="800" height="600" fill="#D8E2EC"/></g>
+  <g id="mid"><ellipse cx="400" cy="518" rx="196" ry="14" fill="#000000" opacity="0.12"/></g>
+  <g id="subject">
+    <rect x="296" y="64" width="208" height="452" rx="26" fill="#1A1A1A"/>
+    <rect x="308" y="76" width="184" height="428" rx="16" fill="#F7F7F7"/>
+    <rect x="324" y="92" width="40" height="6" rx="3" fill="#B6B6B6"/>
+    <rect x="440" y="90" width="14" height="10" rx="2" fill="#B6B6B6"/>
+    <rect x="324" y="114" width="96" height="12" rx="2" fill="#1A1A1A"/>
+    <rect x="324" y="142" width="152" height="94" rx="8" fill="#D8E2EC"/>
+    <circle cx="400" cy="189" r="30" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+    <circle class="pl pl-w3-dot" cx="400" cy="189" r="6" fill="#00A9FF"/>
+    <g>
+      <circle cx="344" cy="268" r="12" fill="#B6B6B6"/>
+      <rect x="368" y="260" width="96" height="8" fill="#1A1A1A" opacity="0.82"/>
+      <rect x="368" y="276" width="60" height="6" fill="#B6B6B6"/>
+      <circle cx="344" cy="316" r="12" fill="#B6B6B6"/>
+      <rect x="368" y="308" width="96" height="8" fill="#1A1A1A" opacity="0.82"/>
+      <rect x="368" y="324" width="72" height="6" fill="#B6B6B6"/>
+      <circle cx="344" cy="364" r="12" fill="#B6B6B6"/>
+      <rect x="368" y="356" width="96" height="8" fill="#1A1A1A" opacity="0.82"/>
+      <rect x="368" y="372" width="48" height="6" fill="#B6B6B6"/>
+    </g>
+    <rect class="pl pl-w3-cta" x="324" y="440" width="152" height="30" rx="15" fill="#00A9FF"/>
+    <rect x="360" y="452" width="80" height="6" rx="3" fill="#1A1A1A"/>
+    <rect x="324" y="486" width="152" height="1" fill="#B6B6B6"/>
+    <g fill="#B6B6B6">
+      <rect x="348" y="496" width="10" height="10" rx="2"/><rect x="388" y="496" width="10" height="10" rx="2"/><rect x="428" y="496" width="10" height="10" rx="2"/><rect x="468" y="496" width="10" height="10" rx="2"/>
+    </g>
+  </g>
+  <g id="foreground">
+    <g transform="rotate(-4 620 244)">
+      <rect x="520" y="180" width="210" height="130" rx="10" fill="#F3EBE1" stroke="#B6B6B6" stroke-width="1"/>
+      <rect x="544" y="204" width="120" height="9" fill="#1A1A1A"/>
+      <rect x="544" y="226" width="160" height="6" fill="#B6B6B6"/>
+      <rect x="544" y="242" width="132" height="6" fill="#B6B6B6"/>
+      <circle cx="560" cy="282" r="8" fill="#00A9FF"/>
+    </g>
+    <circle cx="486" cy="96" r="10" fill="#F9B845"/>
+  </g>
+</svg></span>
+        <span class="work-meta">
+          <span class="work-index sf-label">03</span>
+          <span class="work-name">纸岛 · 阅读应用</span>
+          <span class="work-year sf-label">2024</span>
+        </span>
+        <span class="work-desc sf-caption">一款专注长文阅读的移动端产品，从信息架构到组件系统</span>
+        <span class="work-tags"><i>APP</i><i>PRODUCT</i></span>
+        <span class="work-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="work-card reveal" style="--i:3">
+      <a class="work-link" href="#contact" aria-label="《网格与留白》设计年鉴，2024">
+        <span class="art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="出版物画册占位插画">
+  <title>出版物 / 画册 · 占位插画</title>
+  <!-- Brief: 主体=摊开的跨页画册；场景=纸面展平；情绪=沉静阅读感；风格=网格精确×纸感扁平；viewBox 800x600；光源左上 -->
+  <g id="background"><rect width="800" height="600" fill="#F7F7F7"/></g>
+  <g id="mid"><ellipse cx="400" cy="484" rx="280" ry="14" fill="#000000" opacity="0.12"/></g>
+  <g id="subject">
+    <rect x="118" y="118" width="272" height="364" rx="3" fill="#FFFFFF" stroke="#B6B6B6" stroke-width="1"/>
+    <rect x="410" y="118" width="272" height="364" rx="3" fill="#FFFFFF" stroke="#B6B6B6" stroke-width="1"/>
+    <rect x="118" y="118" width="14" height="364" fill="#EAEAEB" opacity="0.6"/>
+    <rect x="668" y="118" width="14" height="364" fill="#EAEAEB" opacity="0.6"/>
+    <rect x="399" y="118" width="2" height="364" fill="#B6B6B6"/>
+    <rect x="150" y="150" width="208" height="180" fill="#D8E2EC"/>
+    <circle cx="254" cy="240" r="52" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+    <circle cx="254" cy="240" r="10" fill="#1A1A1A"/>
+    <g fill="#B6B6B6">
+      <rect x="150" y="356" width="208" height="6"/><rect x="150" y="374" width="180" height="6"/><rect x="150" y="392" width="196" height="6"/><rect x="150" y="410" width="120" height="6"/>
+    </g>
+    <rect x="442" y="150" width="128" height="12" fill="#1A1A1A"/>
+    <rect x="442" y="176" width="80" height="6" fill="#B6B6B6"/>
+    <g fill="#B6B6B6">
+      <rect x="442" y="212" width="208" height="6"/><rect x="442" y="230" width="208" height="6"/><rect x="442" y="248" width="188" height="6"/><rect x="442" y="266" width="208" height="6"/><rect x="442" y="284" width="160" height="6"/>
+    </g>
+    <rect x="442" y="316" width="10" height="10" fill="#00A9FF"/>
+    <g fill="#B6B6B6">
+      <rect x="462" y="319" width="188" height="6"/><rect x="442" y="344" width="208" height="6"/><rect x="442" y="362" width="140" height="6"/>
+    </g>
+  </g>
+  <g id="foreground">
+    <g class="pl pl-w4-ribbon">
+      <rect x="646" y="118" width="16" height="72" fill="#00A9FF"/>
+      <polygon points="646,190 662,190 654,206" fill="#00A9FF"/>
+    </g>
+    <rect x="96" y="96" width="10" height="10" fill="#F9B845"/>
+  </g>
+</svg></span>
+        <span class="work-meta">
+          <span class="work-index sf-label">04</span>
+          <span class="work-name">《网格与留白》年鉴</span>
+          <span class="work-year sf-label">2024</span>
+        </span>
+        <span class="work-desc sf-caption">年度设计年鉴的装帧设计与内页排版，328 页</span>
+        <span class="work-tags"><i>EDITORIAL</i><i>PRINT</i></span>
+        <span class="work-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="work-card reveal" style="--i:4">
+      <a class="work-link" href="#contact" aria-label="声玩 品牌动态识别，2023">
+        <span class="art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="动态识别故事板占位插画">
+  <title>动态识别 / 故事板 · 占位插画</title>
+  <!-- Brief: 主体=四格胶片故事板（形状逐格位移=运动线索）；场景=剪辑台；情绪=节奏感；风格=网格精确×纸感扁平；viewBox 800x600 -->
+  <g id="background"><rect width="800" height="600" fill="#F7F7F7"/></g>
+  <g id="mid"><rect x="80" y="168" width="640" height="264" fill="#FFFFFF" stroke="#B6B6B6" stroke-width="1"/></g>
+  <g id="details" fill="#1A1A1A">
+    <rect x="104" y="180" width="14" height="14" rx="2"/><rect x="154" y="180" width="14" height="14" rx="2"/><rect x="204" y="180" width="14" height="14" rx="2"/><rect x="254" y="180" width="14" height="14" rx="2"/><rect x="304" y="180" width="14" height="14" rx="2"/><rect x="354" y="180" width="14" height="14" rx="2"/><rect x="404" y="180" width="14" height="14" rx="2"/><rect x="454" y="180" width="14" height="14" rx="2"/><rect x="504" y="180" width="14" height="14" rx="2"/><rect x="554" y="180" width="14" height="14" rx="2"/><rect x="604" y="180" width="14" height="14" rx="2"/><rect x="654" y="180" width="14" height="14" rx="2"/>
+    <rect x="104" y="408" width="14" height="14" rx="2"/><rect x="154" y="408" width="14" height="14" rx="2"/><rect x="204" y="408" width="14" height="14" rx="2"/><rect x="254" y="408" width="14" height="14" rx="2"/><rect x="304" y="408" width="14" height="14" rx="2"/><rect x="354" y="408" width="14" height="14" rx="2"/><rect x="404" y="408" width="14" height="14" rx="2"/><rect x="454" y="408" width="14" height="14" rx="2"/><rect x="504" y="408" width="14" height="14" rx="2"/><rect x="554" y="408" width="14" height="14" rx="2"/><rect x="604" y="408" width="14" height="14" rx="2"/><rect x="654" y="408" width="14" height="14" rx="2"/>
+  </g>
+  <g id="subject">
+    <g class="pl pl-w5-f1"><circle cx="150" cy="268" r="42" fill="#656565"/><circle cx="126" cy="252" r="12" fill="#FFFFFF" opacity="0.18"/></g>
+    <g class="pl pl-w5-f1g" opacity="0.16"><circle cx="128" cy="256" r="42" fill="#656565"/></g>
+    <g class="pl pl-w5-f2"><rect x="266" y="226" width="84" height="84" rx="6" fill="#1A1A1A" transform="rotate(12 308 268)"/></g>
+    <g class="pl pl-w5-f2g" opacity="0.16"><rect x="252" y="214" width="84" height="84" rx="6" fill="#1A1A1A" transform="rotate(12 308 268)"/></g>
+    <g class="pl pl-w5-f3"><polygon points="420,222 472,292 368,292" fill="#F3EBE1" stroke="#1A1A1A" stroke-width="2"/></g>
+    <g class="pl pl-w5-f3g" opacity="0.16"><polygon points="406,212 458,282 354,282" fill="#F3EBE1"/></g>
+    <g class="pl pl-w5-f4" fill="#1A1A1A">
+      <circle cx="560" cy="240" r="7"/><circle cx="590" cy="240" r="7"/><circle cx="620" cy="240" r="7"/>
+      <circle cx="560" cy="270" r="7"/><circle cx="590" cy="270" r="7"/><circle cx="620" cy="270" r="7"/>
+      <circle cx="560" cy="300" r="7"/><circle cx="590" cy="300" r="7"/><circle cx="620" cy="300" r="7"/>
+    </g>
+  </g>
+  <g id="foreground">
+    <rect x="120" y="470" width="560" height="4" rx="2" fill="#EAEAEB"/>
+    <rect class="pl pl-w5-prog" x="120" y="470" width="340" height="4" rx="2" fill="#00A9FF"/>
+    <circle cx="200" cy="540" r="26" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+    <polygon class="pl pl-w5-play" points="191,528 217,540 191,552" fill="#00A9FF"/>
+    <rect x="252" y="536" width="180" height="8" fill="#1A1A1A"/>
+    <rect x="252" y="552" width="104" height="5" fill="#B6B6B6"/>
+  </g>
+</svg></span>
+        <span class="work-meta">
+          <span class="work-index sf-label">05</span>
+          <span class="work-name">声玩 · 动态识别</span>
+          <span class="work-year sf-label">2023</span>
+        </span>
+        <span class="work-desc sf-caption">音频品牌的动态识别系统、发布会视觉与社交模板</span>
+        <span class="work-tags"><i>MOTION</i><i>IDENTITY</i></span>
+        <span class="work-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="work-card reveal" style="--i:5">
+      <a class="work-link" href="#contact" aria-label="磐石建筑 事务所官网，2023">
+        <span class="art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="网站界面占位插画">
+  <title>网站设计 · 占位插画</title>
+  <!-- Brief: 主体=浏览器窗口（导航+hero+双卡+CTA）；场景=桌面展示；情绪=可靠工程感；风格=网格精确×纸感扁平；viewBox 800x600；光源左上 -->
+  <g id="background"><rect width="800" height="600" fill="#F7F7F7"/></g>
+  <g id="mid"><ellipse cx="400" cy="494" rx="292" ry="13" fill="#000000" opacity="0.12"/></g>
+  <g id="subject">
+    <rect x="104" y="88" width="592" height="404" rx="8" fill="#FFFFFF" stroke="#B6B6B6" stroke-width="1"/>
+    <rect x="105" y="89" width="590" height="36" rx="7" fill="#F7F7F7"/>
+    <rect x="105" y="124" width="590" height="1" fill="#B6B6B6"/>
+    <circle cx="128" cy="107" r="5" fill="#1A1A1A"/>
+    <circle cx="146" cy="107" r="5" fill="#B6B6B6"/>
+    <circle cx="164" cy="107" r="5" fill="#00A9FF"/>
+    <rect x="196" y="99" width="220" height="16" rx="8" fill="#FFFFFF" stroke="#B6B6B6" stroke-width="1"/>
+    <g fill="#B6B6B6">
+      <rect x="136" y="152" width="72" height="8"/><rect x="136" y="176" width="52" height="8"/><rect x="136" y="200" width="64" height="8"/><rect x="136" y="224" width="44" height="8"/><rect x="136" y="248" width="60" height="8"/>
+    </g>
+    <rect x="136" y="146" width="40" height="8" fill="#1A1A1A"/>
+    <rect x="248" y="152" width="408" height="128" rx="6" fill="#1A1A1A"/>
+    <g fill="#00A9FF">
+      <circle cx="288" cy="192" r="6"/><circle cx="312" cy="192" r="6"/><circle cx="336" cy="192" r="6"/>
+    </g>
+    <rect x="288" y="222" width="150" height="10" fill="#F7F7F7" opacity="0.85"/>
+    <rect x="288" y="242" width="96" height="6" fill="#F7F7F7" opacity="0.45"/>
+    <rect x="248" y="300" width="196" height="112" rx="6" fill="#D8E2EC"/>
+    <rect x="272" y="324" width="72" height="8" fill="#1A1A1A"/>
+    <rect x="272" y="344" width="148" height="6" fill="#B6B6B6"/>
+    <rect x="272" y="360" width="120" height="6" fill="#B6B6B6"/>
+    <rect x="460" y="300" width="196" height="112" rx="6" fill="#F3EBE1"/>
+    <rect x="484" y="324" width="72" height="8" fill="#1A1A1A"/>
+    <rect x="484" y="344" width="148" height="6" fill="#B6B6B6"/>
+    <rect x="484" y="360" width="104" height="6" fill="#B6B6B6"/>
+    <rect class="pl pl-w6-cta" x="248" y="436" width="112" height="28" rx="4" fill="#00A9FF"/>
+    <rect x="276" y="447" width="56" height="6" fill="#1A1A1A"/>
+  </g>
+  <g id="foreground">
+    <g class="pl pl-w6-cursor">
+      <polygon points="352,330 352,362 361,353 368,368 375,364 368,350 378,349" fill="#1A1A1A"/>
+    </g>
+    <rect x="104" y="512" width="592" height="1" fill="#B6B6B6"/>
+    <rect x="640" y="524" width="12" height="12" fill="#F9B845"/>
+  </g>
+</svg></span>
+        <span class="work-meta">
+          <span class="work-index sf-label">06</span>
+          <span class="work-name">磐石建筑 · 官网</span>
+          <span class="work-year sf-label">2023</span>
+        </span>
+        <span class="work-desc sf-caption">建筑事务所的作品集网站，含项目档案与图纸浏览</span>
+        <span class="work-tags"><i>WEB</i><i>SITE</i></span>
+        <span class="work-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="work-card reveal" style="--i:6">
+      <a class="work-link" href="#contact" aria-label="「材料的温度」主题展陈，2022">
+        <span class="art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="展陈空间占位插画">
+  <title>展陈空间 · 占位插画</title>
+  <!-- Brief: 主体=三块展板+圆柱展台+吊装标牌（等距透视）；场景=展厅；情绪=空间秩序感；风格=网格精确×纸感扁平；viewBox 800x600；光源左上 -->
+  <defs>
+    <g id="w7-panel">
+      <rect x="0" y="0" width="120" height="120" fill="#1A1A1A"/>
+      <polygon points="0,0 120,0 100,-26 -20,-26" fill="#F7F7F7" stroke="#B6B6B6" stroke-width="1"/>
+    </g>
+  </defs>
+  <g id="background"><rect width="800" height="600" fill="#F7F7F7"/></g>
+  <g id="far">
+    <polygon points="400,70 300,432 500,432" fill="#F9B845" opacity="0.10"/>
+    <line x1="400" y1="60" x2="400" y2="150" stroke="#1A1A1A" stroke-width="1"/>
+  </g>
+  <g id="mid">
+    <polygon points="80,430 720,430 660,520 140,520" fill="#EAEAEB"/>
+    <g stroke="#B6B6B6" stroke-width="0.75">
+      <line x1="200" y1="430" x2="230" y2="520"/><line x1="320" y1="430" x2="330" y2="520"/><line x1="440" y1="430" x2="430" y2="520"/><line x1="560" y1="430" x2="530" y2="520"/>
+      <line x1="140" y1="460" x2="660" y2="460"/><line x1="128" y1="490" x2="672" y2="490"/>
+    </g>
+  </g>
+  <g id="subject">
+    <ellipse cx="230" cy="452" rx="86" ry="9" fill="#000000" opacity="0.12"/>
+    <ellipse cx="390" cy="424" rx="86" ry="9" fill="#000000" opacity="0.12"/>
+    <ellipse cx="550" cy="424" rx="86" ry="9" fill="#000000" opacity="0.12"/>
+    <ellipse cx="620" cy="474" rx="52" ry="7" fill="#000000" opacity="0.12"/>
+    <use href="#w7-panel" transform="translate(170 332)"/>
+    <use href="#w7-panel" transform="translate(330 292)"/>
+    <use href="#w7-panel" transform="translate(490 352)"/>
+    <rect x="512" y="384" width="26" height="26" fill="#00A9FF"/>
+    <rect x="580" y="396" width="80" height="74" fill="#656565"/>
+    <ellipse cx="620" cy="396" rx="40" ry="12" fill="#B6B6B6"/>
+    <rect x="602" y="368" width="36" height="28" rx="3" fill="#1A1A1A"/>
+    <rect x="360" y="150" width="80" height="56" rx="4" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1"/>
+    <g fill="#00A9FF">
+      <circle cx="378" cy="170" r="4"/><circle cx="394" cy="170" r="4"/><circle cx="410" cy="170" r="4"/>
+      <circle cx="378" cy="186" r="4"/><circle cx="394" cy="186" r="4"/>
+    </g>
+    <rect x="378" y="196" width="44" height="4" fill="#B6B6B6"/>
+  </g>
+  <g id="foreground">
+    <g fill="#656565">
+      <circle cx="112" cy="470" r="10"/><rect x="102" y="482" width="20" height="36" rx="8"/>
+      <circle cx="148" cy="478" r="10"/><rect x="138" y="490" width="20" height="36" rx="8"/>
+    </g>
+  </g>
+</svg></span>
+        <span class="work-meta">
+          <span class="work-index sf-label">07</span>
+          <span class="work-name">「材料的温度」展陈</span>
+          <span class="work-year sf-label">2022</span>
+        </span>
+        <span class="work-desc sf-caption">材料主题展的展陈设计、导视系统与画册</span>
+        <span class="work-tags"><i>SPATIAL</i><i>EXHIBITION</i></span>
+        <span class="work-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="work-card reveal" style="--i:7">
+      <a class="work-link" href="#contact" aria-label="山野茶业 包装系统，2022">
+        <span class="art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="包装系统占位插画">
+  <title>包装系统 · 占位插画</title>
+  <!-- Brief: 主体=等距包装盒（主盒+扁盒+吊牌）；场景=暖色展台；情绪=温厚手工感；风格=网格精确×纸感扁平；viewBox 800x600；光源左上 -->
+  <g id="background"><rect width="800" height="600" fill="#F3EBE1"/></g>
+  <g id="mid">
+    <ellipse cx="380" cy="466" rx="132" ry="12" fill="#000000" opacity="0.12"/>
+    <ellipse cx="585" cy="392" rx="102" ry="9" fill="#000000" opacity="0.12"/>
+  </g>
+  <g id="subject">
+    <polygon points="500,300 670,300 656,276 486,276" fill="#F7F7F7" stroke="#B6B6B6" stroke-width="1"/>
+    <polygon points="670,300 656,276 656,362 670,386" fill="#EAEAEB"/>
+    <rect x="500" y="300" width="170" height="86" fill="#FFFFFF" stroke="#B6B6B6" stroke-width="1"/>
+    <rect x="528" y="322" width="72" height="8" fill="#1A1A1A"/>
+    <rect x="528" y="342" width="114" height="6" fill="#B6B6B6"/>
+    <rect x="528" y="358" width="88" height="6" fill="#B6B6B6"/>
+    <polygon points="270,240 490,240 470,212 250,212" fill="#F7F7F7" stroke="#B6B6B6" stroke-width="1"/>
+    <polygon points="490,240 470,212 470,432 490,460" fill="#EAEAEB"/>
+    <rect x="270" y="240" width="220" height="220" fill="#FFFFFF" stroke="#B6B6B6" stroke-width="1"/>
+    <polygon points="330,224 410,224 400,233 320,233" fill="#00A9FF"/>
+    <circle cx="380" cy="350" r="46" fill="#1A1A1A"/>
+    <circle cx="380" cy="350" r="34" fill="none" stroke="#F7F7F7" stroke-width="1" opacity="0.4"/>
+    <g fill="#00A9FF">
+      <circle cx="362" cy="336" r="6"/><circle cx="380" cy="330" r="6"/><circle cx="398" cy="336" r="6"/>
+      <circle cx="371" cy="356" r="6"/><circle cx="389" cy="356" r="6"/>
+    </g>
+    <rect x="356" y="372" width="48" height="5" fill="#F7F7F7" opacity="0.7"/>
+  </g>
+  <g id="foreground">
+    <line x1="500" y1="240" x2="520" y2="282" stroke="#1A1A1A" stroke-width="1"/>
+    <g class="pl pl-w8-tag" transform="rotate(6 522 300)">
+      <rect x="508" y="282" width="28" height="36" rx="4" fill="#F9B845"/>
+      <circle cx="522" cy="294" r="3.5" fill="#1A1A1A"/>
+    </g>
+    <g fill="#656565">
+      <circle cx="96" cy="96" r="3.5"/><circle cx="116" cy="96" r="3.5"/><circle cx="136" cy="96" r="3.5"/>
+    </g>
+  </g>
+</svg></span>
+        <span class="work-meta">
+          <span class="work-index sf-label">08</span>
+          <span class="work-name">山野茶业 · 包装系统</span>
+          <span class="work-year sf-label">2022</span>
+        </span>
+        <span class="work-desc sf-caption">茶礼盒系列包装，覆盖 6 个产品线与季节限定</span>
+        <span class="work-tags"><i>PACKAGING</i></span>
+        <span class="work-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+  </div>
+</section>
+
+<!-- ============ NUMBERS ============ -->
+<section class="numbers" aria-label="工作室数据">
+  <div class="numbers-grid">
+    <div class="num reveal"><span class="num-value" data-count="2019" data-static="true">2019</span><span class="num-label sf-label">成立年份 / EST.</span></div>
+    <div class="num reveal"><span class="num-value" data-count="128">0</span><span class="num-label sf-label">完成项目 / PROJECTS</span></div>
+    <div class="num reveal"><span class="num-value" data-count="46">0</span><span class="num-label sf-label">合作客户 / CLIENTS</span></div>
+    <div class="num reveal"><span class="num-value" data-count="9">0</span><span class="num-label sf-label">设计奖项 / AWARDS</span></div>
+  </div>
+</section>
+
+<!-- ============ STUDIO ============ -->
+<section class="section" id="studio" aria-labelledby="studio-title">
+  <header class="section-head">
+    <p class="section-index sf-label">02 / STUDIO</p>
+    <h2 class="section-title" id="studio-title">工作室</h2>
+    <p class="section-sub sf-subtitle">A Small Studio That Ships</p>
+  </header>
+  <div class="studio-grid">
+    <div class="studio-copy">
+      <p class="reveal">Step Studio 是一间六人的独立设计工作室，2019 年成立于上海。我们服务品牌与产品的关键决策：一次形象升级、一个产品从零到一、一场需要被记住的发布。</p>
+      <p class="reveal">我们不做大而全的外包。每个项目由合伙人直接带领，设计师与客户在同一间会议室里把问题聊清楚，再动手。平均项目周期 6–10 周，交付物永远包含源文件与规范。</p>
+      <p class="reveal">合作方式有两种：项目制，按阶段报价；长期顾问，按年签约，参与客户持续的设计决策。</p>
+    </div>
+    <aside class="studio-side reveal">
+      <h3 class="sf-label">团队构成 / TEAM</h3>
+      <ul class="mono-list">
+        <li><span>合伙人 · 品牌</span><span>2</span></li>
+        <li><span>产品设计</span><span>2</span></li>
+        <li><span>动效设计</span><span>1</span></li>
+        <li><span>前端工程</span><span>1</span></li>
+      </ul>
+      <h3 class="sf-label">工作方式 / HOW</h3>
+      <ul class="mono-list">
+        <li><span>项目周期</span><span>6–10 周</span></li>
+        <li><span>合作方式</span><span>项目制 / 年度顾问</span></li>
+        <li><span>交付物</span><span>源文件 + 规范 + 培训</span></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services" aria-labelledby="services-title">
+  <header class="section-head">
+    <p class="section-index sf-label">03 / SERVICES</p>
+    <h2 class="section-title" id="services-title">服务</h2>
+    <p class="section-sub sf-subtitle">What We Do</p>
+  </header>
+  <ul class="service-list">
+    <li class="service-row reveal">
+      <a href="#contact">
+        <span class="service-index sf-label">01</span>
+        <span class="service-name">品牌识别</span>
+        <span class="service-desc">标志、字体系统、色彩规范、品牌手册与应用物料</span>
+        <span class="service-tags sf-label">LOGO · TYPE · GUIDELINES</span>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </a>
+    </li>
+    <li class="service-row reveal">
+      <a href="#contact">
+        <span class="service-index sf-label">02</span>
+        <span class="service-name">数字产品</span>
+        <span class="service-desc">网站与应用的体验设计、设计系统搭建与可用性验证</span>
+        <span class="service-tags sf-label">WEB · APP · DESIGN SYSTEM</span>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </a>
+    </li>
+    <li class="service-row reveal">
+      <a href="#contact">
+        <span class="service-index sf-label">03</span>
+        <span class="service-name">动态设计</span>
+        <span class="service-desc">品牌动态识别、发布会视觉、社交内容模板与短片</span>
+        <span class="service-tags sf-label">MOTION · FILM · SOCIAL</span>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </a>
+    </li>
+    <li class="service-row reveal">
+      <a href="#contact">
+        <span class="service-index sf-label">04</span>
+        <span class="service-name">出版策展</span>
+        <span class="service-desc">画册与年报的装帧排版、展览视觉与空间导视</span>
+        <span class="service-tags sf-label">PRINT · EXHIBITION</span>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section" id="process" aria-labelledby="process-title">
+  <header class="section-head">
+    <p class="section-index sf-label">04 / PROCESS</p>
+    <h2 class="section-title" id="process-title">流程</h2>
+    <p class="section-sub sf-subtitle">How A Project Runs</p>
+  </header>
+  <ol class="process-list">
+    <li class="reveal"><span class="process-index sf-label">01</span><h3>洞察</h3><p class="sf-caption">访谈、竞品与用户研究，把问题谈清楚</p></li>
+    <li class="reveal"><span class="process-index sf-label">02</span><h3>策略</h3><p class="sf-caption">定位、信息架构与视觉方向，确认再动手</p></li>
+    <li class="reveal"><span class="process-index sf-label">03</span><h3>设计</h3><p class="sf-caption">高频次评审，每周一次进度对齐</p></li>
+    <li class="reveal"><span class="process-index sf-label">04</span><h3>交付</h3><p class="sf-caption">源文件、规范文档与团队培训</p></li>
+  </ol>
+</section>
+
+<!-- ============ CLIENTS ============ -->
+<section class="section" id="clients" aria-labelledby="clients-title">
+  <header class="section-head">
+    <p class="section-index sf-label">05 / CLIENTS</p>
+    <h2 class="section-title" id="clients-title">客户</h2>
+    <p class="section-sub sf-subtitle">Selected Clients</p>
+  </header>
+  <ul class="clients-grid">
+    <li class="reveal">潮汐音乐</li><li class="reveal">纸岛</li><li class="reveal">磐石建筑</li>
+    <li class="reveal">山野茶业</li><li class="reveal">声玩</li><li class="reveal">城市观测站</li>
+    <li class="reveal">三分之一咖啡</li><li class="reveal">明日展览</li><li class="reveal">河图剧场</li>
+    <li class="reveal">白泽科技</li><li class="reveal">荒野户外</li><li class="reveal">拾光摄影</li>
+  </ul>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact" aria-labelledby="contact-title">
+  <p class="section-index sf-label">06 / CONTACT</p>
+  <h2 class="contact-title" id="contact-title">下一个项目，<br>从一封邮件开始。</h2>
+  <p class="contact-lede reveal">介绍你的项目、时间与预算范围，我们会在两个工作日内回复。也欢迎先聊聊想法，不收费。</p>
+  <div class="contact-actions reveal">
+    <a class="btn btn-accent" href="mailto:hello@stepstudio.design" data-magnetic>hello@stepstudio.design<span class="btn-arrow" aria-hidden="true">↗</span></a>
+  </div>
+  <dl class="contact-meta sf-label reveal">
+    <div><dt>EMAIL</dt><dd>hello@stepstudio.design</dd></div>
+    <div><dt>STUDIO</dt><dd>上海 · 静安</dd></div>
+    <div><dt>SOCIAL</dt><dd><a href="#contact">Instagram</a> · <a href="#contact">Behance</a> · <a href="#contact">微信</a></dd></div>
+  </dl>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="sf-label">STEP STUDIO © 2026 · 上海</p>
+    <p class="sf-label footer-colophon">TOKENS: STEPFUN BRAND V2.0 · TYPE: NOTO SERIF/SANS SC + PT MONO · ART: SVG PLACEHOLDER</p>
+    <a class="footer-top sf-label" href="#top">回到顶部 ↑</a>
+  </div>
+</footer>
+
+<script type="module" src="assets/studio.js"></script>
+</body>
+</html>
